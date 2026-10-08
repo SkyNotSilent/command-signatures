@@ -17,32 +17,25 @@
                         "name": "loglevel",
                         "suggestions": [
                             {
-                                "name": "silent",
-                                "icon": "fig://icon?type=string"
+                                "name": "silent"
                             },
                             {
-                                "name": "error",
-                                "icon": "fig://icon?type=string"
+                                "name": "error"
                             },
                             {
-                                "name": "warn",
-                                "icon": "fig://icon?type=string"
+                                "name": "warn"
                             },
                             {
-                                "name": "success",
-                                "icon": "fig://icon?type=string"
+                                "name": "success"
                             },
                             {
-                                "name": "info",
-                                "icon": "fig://icon?type=string"
+                                "name": "info"
                             },
                             {
-                                "name": "verbose",
-                                "icon": "fig://icon?type=string"
+                                "name": "verbose"
                             },
                             {
-                                "name": "silly",
-                                "icon": "fig://icon?type=string"
+                                "name": "silly"
                             }
                         ]
                     }
@@ -87,16 +80,13 @@
                         "name": "client",
                         "suggestions": [
                             {
-                                "name": "npm",
-                                "icon": "fig://icon?type=npm"
+                                "name": "npm"
                             },
                             {
-                                "name": "yarn",
-                                "icon": "https://yarnpkg.com/favicon-32x32.png"
+                                "name": "yarn"
                             },
                             {
-                                "name": "pnpm",
-                                "icon": "https://pnpm.js.org/img/favicon.png"
+                                "name": "pnpm"
                             }
                         ]
                     }
@@ -123,10 +113,7 @@
                     "description": "Include only packages with names matching the given glob",
                     "args": {
                         "name": "glob",
-                        "generators": {
-                            "script": "lerna ls",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                        }
+                        "generatorName": "ls"
                     }
                 },
                 {
@@ -134,10 +121,7 @@
                     "description": "Exclude packages with names matching the given glob",
                     "args": {
                         "name": "glob",
-                        "generators": {
-                            "script": "lerna ls",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                        }
+                        "generatorName": "ls"
                     }
                 },
                 {
@@ -175,16 +159,13 @@
                         "name": "client",
                         "suggestions": [
                             {
-                                "name": "npm",
-                                "icon": "fig://icon?type=npm"
+                                "name": "npm"
                             },
                             {
-                                "name": "yarn",
-                                "icon": "https://yarnpkg.com/favicon-32x32.png"
+                                "name": "yarn"
                             },
                             {
-                                "name": "pnpm",
-                                "icon": "https://pnpm.js.org/img/favicon.png"
+                                "name": "pnpm"
                             }
                         ]
                     }
@@ -255,32 +236,25 @@
                         "name": "loglevel",
                         "suggestions": [
                             {
-                                "name": "silent",
-                                "icon": "fig://icon?type=string"
+                                "name": "silent"
                             },
                             {
-                                "name": "error",
-                                "icon": "fig://icon?type=string"
+                                "name": "error"
                             },
                             {
-                                "name": "warn",
-                                "icon": "fig://icon?type=string"
+                                "name": "warn"
                             },
                             {
-                                "name": "success",
-                                "icon": "fig://icon?type=string"
+                                "name": "success"
                             },
                             {
-                                "name": "info",
-                                "icon": "fig://icon?type=string"
+                                "name": "info"
                             },
                             {
-                                "name": "verbose",
-                                "icon": "fig://icon?type=string"
+                                "name": "verbose"
                             },
                             {
-                                "name": "silly",
-                                "icon": "fig://icon?type=string"
+                                "name": "silly"
                             }
                         ]
                     }
@@ -347,32 +321,25 @@
                         "name": "loglevel",
                         "suggestions": [
                             {
-                                "name": "silent",
-                                "icon": "fig://icon?type=string"
+                                "name": "silent"
                             },
                             {
-                                "name": "error",
-                                "icon": "fig://icon?type=string"
+                                "name": "error"
                             },
                             {
-                                "name": "warn",
-                                "icon": "fig://icon?type=string"
+                                "name": "warn"
                             },
                             {
-                                "name": "success",
-                                "icon": "fig://icon?type=string"
+                                "name": "success"
                             },
                             {
-                                "name": "info",
-                                "icon": "fig://icon?type=string"
+                                "name": "info"
                             },
                             {
-                                "name": "verbose",
-                                "icon": "fig://icon?type=string"
+                                "name": "verbose"
                             },
                             {
-                                "name": "silly",
-                                "icon": "fig://icon?type=string"
+                                "name": "silly"
                             }
                         ]
                     }
@@ -433,10 +400,7 @@
                     "description": "Force publish for the specified packages (comma-separated)",
                     "args": {
                         "name": "packages",
-                        "generators": {
-                            "script": "lerna ls",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                        },
+                        "generatorName": "ls",
                         "suggestions": [
                             {
                                 "name": "*",
@@ -625,10 +589,7 @@
             "args": {
                 "name": "package",
                 "isOptional": true,
-                "generators": {
-                    "script": "lerna ls",
-                    "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                }
+                "generatorName": "ls"
             },
             "options": [
                 {
@@ -642,32 +603,25 @@
                         "name": "loglevel",
                         "suggestions": [
                             {
-                                "name": "silent",
-                                "icon": "fig://icon?type=string"
+                                "name": "silent"
                             },
                             {
-                                "name": "error",
-                                "icon": "fig://icon?type=string"
+                                "name": "error"
                             },
                             {
-                                "name": "warn",
-                                "icon": "fig://icon?type=string"
+                                "name": "warn"
                             },
                             {
-                                "name": "success",
-                                "icon": "fig://icon?type=string"
+                                "name": "success"
                             },
                             {
-                                "name": "info",
-                                "icon": "fig://icon?type=string"
+                                "name": "info"
                             },
                             {
-                                "name": "verbose",
-                                "icon": "fig://icon?type=string"
+                                "name": "verbose"
                             },
                             {
-                                "name": "silly",
-                                "icon": "fig://icon?type=string"
+                                "name": "silly"
                             }
                         ]
                     }
@@ -722,32 +676,25 @@
                         "name": "loglevel",
                         "suggestions": [
                             {
-                                "name": "silent",
-                                "icon": "fig://icon?type=string"
+                                "name": "silent"
                             },
                             {
-                                "name": "error",
-                                "icon": "fig://icon?type=string"
+                                "name": "error"
                             },
                             {
-                                "name": "warn",
-                                "icon": "fig://icon?type=string"
+                                "name": "warn"
                             },
                             {
-                                "name": "success",
-                                "icon": "fig://icon?type=string"
+                                "name": "success"
                             },
                             {
-                                "name": "info",
-                                "icon": "fig://icon?type=string"
+                                "name": "info"
                             },
                             {
-                                "name": "verbose",
-                                "icon": "fig://icon?type=string"
+                                "name": "verbose"
                             },
                             {
-                                "name": "silly",
-                                "icon": "fig://icon?type=string"
+                                "name": "silly"
                             }
                         ]
                     }
@@ -790,10 +737,7 @@
                     "description": "Include only packages with names matching the given glob",
                     "args": {
                         "name": "glob",
-                        "generators": {
-                            "script": "lerna ls",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                        }
+                        "generatorName": "ls"
                     }
                 },
                 {
@@ -801,10 +745,7 @@
                     "description": "Exclude packages with names matching the given glob",
                     "args": {
                         "name": "glob",
-                        "generators": {
-                            "script": "lerna ls",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                        }
+                        "generatorName": "ls"
                     }
                 },
                 {
@@ -867,10 +808,7 @@
             "args": {
                 "name": "script",
                 "description": "Name of the npm script to run",
-                "generators": {
-                    "script": "lerna list -p | while read p; do\n \\cat $p/package.json && echo END\ndone",
-                    "postProcess": "_NuFrRa_e=>{let n=e.split(l).filter(t=>t.trim()!==\"\"),a=[];return n.forEach(t=>{let f=JSON.parse(t);a=a.concat(Object.keys(f.scripts))}),Array.from(new Set(a)).map(t=>({name:t,icon:\"fig://icon?type=npm\"}))}"
-                }
+                "generatorName": "list_while_read_p"
             }
         },
         {
@@ -888,32 +826,25 @@
                         "name": "loglevel",
                         "suggestions": [
                             {
-                                "name": "silent",
-                                "icon": "fig://icon?type=string"
+                                "name": "silent"
                             },
                             {
-                                "name": "error",
-                                "icon": "fig://icon?type=string"
+                                "name": "error"
                             },
                             {
-                                "name": "warn",
-                                "icon": "fig://icon?type=string"
+                                "name": "warn"
                             },
                             {
-                                "name": "success",
-                                "icon": "fig://icon?type=string"
+                                "name": "success"
                             },
                             {
-                                "name": "info",
-                                "icon": "fig://icon?type=string"
+                                "name": "info"
                             },
                             {
-                                "name": "verbose",
-                                "icon": "fig://icon?type=string"
+                                "name": "verbose"
                             },
                             {
-                                "name": "silly",
-                                "icon": "fig://icon?type=string"
+                                "name": "silly"
                             }
                         ]
                     }
@@ -969,32 +900,25 @@
                 "isOptional": true,
                 "suggestions": [
                     {
-                        "name": "major",
-                        "icon": "fig://icon?type=npm"
+                        "name": "major"
                     },
                     {
-                        "name": "minor",
-                        "icon": "fig://icon?type=npm"
+                        "name": "minor"
                     },
                     {
-                        "name": "patch",
-                        "icon": "fig://icon?type=npm"
+                        "name": "patch"
                     },
                     {
-                        "name": "premajor",
-                        "icon": "fig://icon?type=npm"
+                        "name": "premajor"
                     },
                     {
-                        "name": "preminor",
-                        "icon": "fig://icon?type=npm"
+                        "name": "preminor"
                     },
                     {
-                        "name": "prepatch",
-                        "icon": "fig://icon?type=npm"
+                        "name": "prepatch"
                     },
                     {
-                        "name": "prerelease",
-                        "icon": "fig://icon?type=npm"
+                        "name": "prerelease"
                     }
                 ]
             },
@@ -1004,10 +928,7 @@
                     "description": "An allowlist of globs that match git branches where lerna version is enabled",
                     "args": {
                         "name": "glob",
-                        "generators": {
-                            "script": "git branch --no-color",
-                            "postProcess": "function(e){return e.startsWith(\"fatal:\")?[]:e.split(`\n`).map(n=>({name:n.replace(\"*\",\"\").trim(),description:\"Branch\",icon:\"fig://icon?type=git\"}))}"
-                        }
+                        "generatorName": "git_branch"
                     }
                 },
                 {
@@ -1037,12 +958,10 @@
                         "name": "type",
                         "suggestions": [
                             {
-                                "name": "github",
-                                "icon": "https://github.com/fluidicon.png"
+                                "name": "github"
                             },
                             {
-                                "name": "gitlab",
-                                "icon": "https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/a0178a3dfdb9c4e34857bad3d2d788036baa0c76/icons/gitlab.svg"
+                                "name": "gitlab"
                             }
                         ]
                     }
@@ -1060,10 +979,7 @@
                     "description": "Push the git changes to the specified remote instead of origin",
                     "args": {
                         "name": "remote",
-                        "generators": {
-                            "script": "git remote",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,description:\"Remote\",icon:\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png\"}))"
-                        }
+                        "generatorName": "git_remote"
                     }
                 },
                 {
@@ -1146,10 +1062,7 @@
             "description": "Diff all packages or a single package since the last release",
             "args": {
                 "name": "package",
-                "generators": {
-                    "script": "lerna ls",
-                    "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                },
+                "generatorName": "ls",
                 "isOptional": true
             }
         },
@@ -1168,32 +1081,25 @@
                         "name": "loglevel",
                         "suggestions": [
                             {
-                                "name": "silent",
-                                "icon": "fig://icon?type=string"
+                                "name": "silent"
                             },
                             {
-                                "name": "error",
-                                "icon": "fig://icon?type=string"
+                                "name": "error"
                             },
                             {
-                                "name": "warn",
-                                "icon": "fig://icon?type=string"
+                                "name": "warn"
                             },
                             {
-                                "name": "success",
-                                "icon": "fig://icon?type=string"
+                                "name": "success"
                             },
                             {
-                                "name": "info",
-                                "icon": "fig://icon?type=string"
+                                "name": "info"
                             },
                             {
-                                "name": "verbose",
-                                "icon": "fig://icon?type=string"
+                                "name": "verbose"
                             },
                             {
-                                "name": "silly",
-                                "icon": "fig://icon?type=string"
+                                "name": "silly"
                             }
                         ]
                     }
@@ -1236,10 +1142,7 @@
                     "description": "Include only packages with names matching the given glob",
                     "args": {
                         "name": "glob",
-                        "generators": {
-                            "script": "lerna ls",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                        }
+                        "generatorName": "ls"
                     }
                 },
                 {
@@ -1247,10 +1150,7 @@
                     "description": "Exclude packages with names matching the given glob",
                     "args": {
                         "name": "glob",
-                        "generators": {
-                            "script": "lerna ls",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                        }
+                        "generatorName": "ls"
                     }
                 },
                 {
@@ -1312,10 +1212,7 @@
             ],
             "args": {
                 "name": "command",
-                "generators": {
-                    "script": "lerna list -p | while read p; do\n \\cat $p/package.json && echo END\ndone",
-                    "postProcess": "_NuFrRa_e=>{let n=e.split(l).filter(t=>t.trim()!==\"\"),a=[];return n.forEach(t=>{let f=JSON.parse(t);a=a.concat(Object.keys(f.scripts))}),Array.from(new Set(a)).map(t=>({name:t,icon:\"fig://icon?type=npm\"}))}"
-                }
+                "generatorName": "list_while_read_p"
             }
         },
         {
@@ -1333,32 +1230,25 @@
                         "name": "loglevel",
                         "suggestions": [
                             {
-                                "name": "silent",
-                                "icon": "fig://icon?type=string"
+                                "name": "silent"
                             },
                             {
-                                "name": "error",
-                                "icon": "fig://icon?type=string"
+                                "name": "error"
                             },
                             {
-                                "name": "warn",
-                                "icon": "fig://icon?type=string"
+                                "name": "warn"
                             },
                             {
-                                "name": "success",
-                                "icon": "fig://icon?type=string"
+                                "name": "success"
                             },
                             {
-                                "name": "info",
-                                "icon": "fig://icon?type=string"
+                                "name": "info"
                             },
                             {
-                                "name": "verbose",
-                                "icon": "fig://icon?type=string"
+                                "name": "verbose"
                             },
                             {
-                                "name": "silly",
-                                "icon": "fig://icon?type=string"
+                                "name": "silly"
                             }
                         ]
                     }
@@ -1401,10 +1291,7 @@
                     "description": "Include only packages with names matching the given glob",
                     "args": {
                         "name": "glob",
-                        "generators": {
-                            "script": "lerna ls",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                        }
+                        "generatorName": "ls"
                     }
                 },
                 {
@@ -1412,10 +1299,7 @@
                     "description": "Exclude packages with names matching the given glob",
                     "args": {
                         "name": "glob",
-                        "generators": {
-                            "script": "lerna ls",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                        }
+                        "generatorName": "ls"
                     }
                 },
                 {
@@ -1486,32 +1370,25 @@
                         "name": "loglevel",
                         "suggestions": [
                             {
-                                "name": "silent",
-                                "icon": "fig://icon?type=string"
+                                "name": "silent"
                             },
                             {
-                                "name": "error",
-                                "icon": "fig://icon?type=string"
+                                "name": "error"
                             },
                             {
-                                "name": "warn",
-                                "icon": "fig://icon?type=string"
+                                "name": "warn"
                             },
                             {
-                                "name": "success",
-                                "icon": "fig://icon?type=string"
+                                "name": "success"
                             },
                             {
-                                "name": "info",
-                                "icon": "fig://icon?type=string"
+                                "name": "info"
                             },
                             {
-                                "name": "verbose",
-                                "icon": "fig://icon?type=string"
+                                "name": "verbose"
                             },
                             {
-                                "name": "silly",
-                                "icon": "fig://icon?type=string"
+                                "name": "silly"
                             }
                         ]
                     }
@@ -1554,10 +1431,7 @@
                     "description": "Include only packages with names matching the given glob",
                     "args": {
                         "name": "glob",
-                        "generators": {
-                            "script": "lerna ls",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                        }
+                        "generatorName": "ls"
                     }
                 },
                 {
@@ -1565,10 +1439,7 @@
                     "description": "Exclude packages with names matching the given glob",
                     "args": {
                         "name": "glob",
-                        "generators": {
-                            "script": "lerna ls",
-                            "postProcess": "_NuFrRa_e=>e.split(`\n`).map(n=>({name:n,icon:\"fig://icon?type=string\"}))"
-                        }
+                        "generatorName": "ls"
                     }
                 },
                 {
@@ -1625,12 +1496,10 @@
                         "name": "scope",
                         "suggestions": [
                             {
-                                "name": "public",
-                                "icon": "fig://icon?type=string"
+                                "name": "public"
                             },
                             {
-                                "name": "restricted",
-                                "icon": "fig://icon?type=string"
+                                "name": "restricted"
                             }
                         ]
                     }

@@ -1,11 +1,10 @@
 {
     "name": "cargo",
-    "icon": "📦",
     "description": "CLI Interface for Cargo",
+    "generateSpec": "_NuFrRa_(e,t)=>V(void 0,null,function*(){let a=[],n=(yield t(\"cargo --list\")).split(`\n`).filter((i,o)=>o!=0).map(i=>i.trim().split(/\\s+/,1)[0]);if(n.includes(\"fmt\")){let i={name:\"fmt\",icon:\"\\u{1F6E0}\",description:\"This utility formats all bin and lib files of the current crate using rustfmt\",subcommands:[{name:\"--\",description:\"All other arguments are passed to rustfmt\",args:{generators:(0,r.filepaths)({extensions:[\"rs\"]})},options:[{name:\"--check\",description:\"Run in 'check' mode. Exits with 0 if input is formatted correctly. Exits with 1 and prints a diff if formatting is required\"},{name:\"--emit\",description:\"What data to emit and how\",args:{suggestions:[\"files\",\"stdout\"]}},{name:\"--backup\",description:\"Backup any modified files\"},{name:\"--config-path\",description:\"Path for the configuration file\",args:{generators:(0,r.filepaths)({equals:[\"rustfmt.toml\"]})}},{name:\"--edition\",description:\"Rust edition to use\",args:{suggestions:x}},{name:\"--print-config\",description:\"Dumps a default or minimal config to PATH\",args:[{name:\"verbosity\",suggestions:[\"default\",\"minimal\",\"current\"]},{name:\"PATH\",template:\"filepaths\"}]},{name:[\"-l\",\"--files-with-diff\"],description:\"Prints the names of mismatched files that were formatted\"}]}],options:[{name:\"--check\",description:\"Run rustfmt in check mode\"},{name:\"--all\",description:\"Format all packages, and also their local path-based dependencies\"},{name:[\"-h\",\"--help\"],description:\"Print help information\"},{name:[\"-q\",\"--quiet\"],description:\"No output printed to stdout\"},{name:[\"-v\",\"--verbose\"],description:\"Use verbose output\"},{name:\"--version\",description:\"Print rustfmt version and exit\"},{name:\"--manifest-path\",description:\"Specify path to Cargo.toml\",args:{name:\"manifest-path\",generators:(0,r.filepaths)({equals:[\"Cargo.toml\"]})}},{name:\"--message-format\",description:\"Specify message-format\",args:{name:\"message-format\",suggestions:[\"short\",\"json\",\"human\"]}},{name:[\"-p\",\"--package\"],description:\"Specify package to format\",args:{name:\"package\"}}]};a.push(i)}if(n.includes(\"clippy\")){let i={name:\"clippy\",icon:\"\\u{1F4CE}\",description:\"Runs the Clippy linter\",subcommands:[{name:\"--\",description:\"All other arguments are passed to clippy\",options:[{name:[\"-W\",\"--warn\"],description:\"Set lint warnings\",args:{}},{name:[\"-A\",\"--allow\"],description:\"Set lint allowed\",args:{}},{name:[\"-D\",\"--deny\"],description:\"Set lint denied\",args:{}},{name:[\"-F\",\"--forbid\"],description:\"Set lint forbidden\",args:{}}]}],options:[{name:\"--no-deps\",description:\"Run Clippy only on the given crate, without linting the dependencies\"},{name:\"--fix\",description:\"Automatically apply lint suggestions. This flag implies `--no-deps`\"},{name:\"--allow-dirty\",description:\"Allow fix to apply even if the working directory is dirty\",dependsOn:[\"--fix\"]},{name:\"--allow-staged\",description:\"Allow fix to apply even if the working directory has staged changes\",dependsOn:[\"--fix\"]}]};a.push(i)}if(n.includes(\"flamegraph\")){let i={name:\"flamegraph\",icon:\"\\u{1F525}\",description:\"Generates a flamegraph of the current crate\",options:[{name:\"--deterministic\",description:\"Colors are selected such that the color of a function does not change between runs\"},{name:\"--dev\",description:\"Build with the dev profile\"},{name:[\"-i\",\"--inverted\"],description:\"Plot the flame graph up-side-down\"},{name:\"--no-default-features\",description:\"Disable default features\"},{name:\"--open\",description:\"Open the output .svg file with default program\"},{name:\"--reverse\",description:\"Generate stack-reversed flame graph\"},{name:\"--root\",description:\"Run with root privileges (using `sudo`)\"},{name:\"--no-inline\",description:\"Disable inlining for perf script because of performance issues\"}]};a.push(i)}if(n.includes(\"audit\")){let i={name:\"audit\",icon:\"\\u{1F4DA}\",description:\"Runs the cargo audit tool\",options:[{name:[\"-d\",\"--db\"],description:\"Advisory database git repo path\",args:{name:\"DB\",template:\"folders\"}},{name:[\"-D\",\"--deny\"],description:\"Exit with an error on the argument\",args:{isVariadic:!0,suggestions:[{name:\"warnings\",description:\"Warnings (any)\"},{name:\"unmaintained\",description:\"Unmaintained crates\"},{name:\"unsound\",description:\"Unsound Rust code\"},{name:\"yanked\",description:\"Yanked crates\"}]}},{name:[\"-f\",\"--file\"],description:\"Cargo lockfile to inspect\",args:{suggestions:[{name:\"-\",description:\"Stdin\"}],generators:(0,r.filepaths)({equals:[\"Cargo.lock\"]})}},{name:[\"-n\",\"--no-fetch\"],description:\"Do not perform a git fetch on the advisory DB\"},{name:\"--stale\",description:\"Allow stale database\"},{name:\"--target-arch\",description:\"Filter vulnerabilities by CPU\",args:{}},{name:\"--target-os\",description:\"Filter vulnerabilities by OS\",args:{}},{name:[\"-u\",\"--url\"],description:\"URL for advisory database git repo\"},{name:\"--json\",description:\"Output report in JSON format\"},{name:\"--no-local-crates\",description:\"Vulnerability querying does not consider local crates\"}]};a.push(i)}if(n.includes(\"outdated\")){let i={name:\"outdated\",icon:\"\\u{1F4E6}\",description:\"Displays information about project dependency versions\",options:[{name:[\"-a\",\"--aggressive\"],description:\"Ignores channels for latest updates\"},{name:\"--color\",description:\"Output coloring\",args:{name:\"COLOR\",suggestions:[\"always\",\"never\",\"auto\"],default:\"auto\"}},{name:[\"-d\",\"--depth\"],description:\"How deep in the dependency chain to search (Defaults to all dependencies when omitted)\",args:{name:\"DEPTH\"},exclusiveOn:[\"-R\",\"--root-deps-only\"]},{name:[\"-x\",\"--exclude\"],description:\"Exclude a dependency from the output\",isRequired:!0,args:{name:\"DEPENDENCY\",generators:v}},{name:\"--exit-code\",description:\"The exit code to return on new versions found\",args:{name:\"NUM\",suggestions:[\"0\",\"1\"],default:\"0\"}},{name:\"--features\",description:\"Space-separated list of features\",args:{name:\"FEATURES\",generators:l,isVariadic:!0}},{name:\"--format\",description:\"Output formatting\",args:{name:\"FORMAT\",suggestions:[\"json\",\"list\"],default:\"list\"}},{name:[\"-h\",\"--help\"],description:\"Prints help information\"},{name:[\"-i\",\"--ignore\"],description:\"Dependencies to not print in the output\",args:{name:\"DEPENDENCY\",generators:v}},{name:[\"-e\",\"--ignore-external-rel\"],description:\"Ignore relative dependencies external to workspace and check root dependencies only\"},{name:[\"-m\",\"--manifest-path\"],description:\"Path to the Cargo.toml file to use\",args:{name:\"PATH\",generators:(0,r.filepaths)({equals:[\"Cargo.toml\"]})}},{name:[\"-o\",\"--offline\"],description:\"Run without accessing the network\"},{name:[\"-p\",\"--packages\"],description:\"Packages to inspect for updates\",args:{name:\"PACKAGES\",generators:v}},{name:[\"-q\",\"--quiet\"],description:\"Suppresses warnings\"},{name:[\"-r\",\"--root\"],description:\"Package to treat as the root package\",args:{name:\"PACKAGE\",generators:v}},{name:[\"-R\",\"--root-deps-only\"],description:\"Only check root dependencies\",exclusiveOn:[\"-d\",\"--depth\"]},{name:[\"-V\",\"--version\"],description:\"Prints version information\"},{name:[\"-v\",\"--verbose\"],description:\"Use verbose output\"},{name:[\"-w\",\"--workspace\"],description:\"Checks updates for all workspace members rather than only the root package\"}]};a.push(i)}return{name:\"cargo\",subcommands:a}})",
     "subcommands": [
         {
             "name": "bench",
-            "icon": "📊",
             "description": "Execute all benchmarks of a local package",
             "options": [
                 {
@@ -14,10 +13,7 @@
                     "isRepeatable": true,
                     "args": {
                         "name": "bin",
-                        "generators": {
-                            "script": "cargo read-manifest",
-                            "postProcess": "function(e){let t=JSON.parse(e);return t.targets?t.targets.filter(({kind:a})=>a.includes(\"bin\")).map(({name:a})=>({name:a})):[]}"
-                        },
+                        "generatorName": "read_manifest",
                         "isVariadic": true
                     }
                 },
@@ -36,13 +32,8 @@
                     "isRepeatable": true,
                     "args": {
                         "name": "test",
-                        "generators": {
-                            "script": "function(e){let t=e[e.length-1],a=Math.max(t.split(/::?/).length,1),i=t.split(\"::\").pop();return`cargo t -- --list | awk '/: test$/ { print substr($1, 1, length($1) - 1) }' | awk -F \"::\" '{ print \"${i[i.length-1]==\":\"?\":\":\"\"}\"$${a},int( NF / ${a} ) }'`}",
-                            "postProcess": "function(e){return[...new Set(e.split(`\n`))].map(t=>{let[a,n]=t.split(\" \"),i=parseInt(n),o=a.replaceAll(\":\",\"\");return{name:o.length?`${a}${i?\"\":\"::\"}`:\"\",displayName:o}})}",
-                            "trigger": ":",
-                            "getQueryTerm": ":"
-                        },
-                        "isVariadic": true
+                        "isVariadic": true,
+                        "generatorName": "test_targets"
                     }
                 },
                 {
@@ -123,10 +114,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -277,7 +265,6 @@
                 "build",
                 "b"
             ],
-            "icon": "📦",
             "description": "Compile a local package and all of its dependencies",
             "options": [
                 {
@@ -335,13 +322,8 @@
                     "isRepeatable": true,
                     "args": {
                         "name": "test",
-                        "generators": {
-                            "script": "function(e){let t=e[e.length-1],a=Math.max(t.split(/::?/).length,1),i=t.split(\"::\").pop();return`cargo t -- --list | awk '/: test$/ { print substr($1, 1, length($1) - 1) }' | awk -F \"::\" '{ print \"${i[i.length-1]==\":\"?\":\":\"\"}\"$${a},int( NF / ${a} ) }'`}",
-                            "postProcess": "function(e){return[...new Set(e.split(`\n`))].map(t=>{let[a,n]=t.split(\" \"),i=parseInt(n),o=a.replaceAll(\":\",\"\");return{name:o.length?`${a}${i?\"\":\"::\"}`:\"\",displayName:o}})}",
-                            "trigger": ":",
-                            "getQueryTerm": ":"
-                        },
-                        "isVariadic": true
+                        "isVariadic": true,
+                        "generatorName": "test_targets"
                     }
                 },
                 {
@@ -399,10 +381,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -550,7 +529,6 @@
                 "check",
                 "c"
             ],
-            "icon": "🛠",
             "description": "Check a local package and all of its dependencies for errors",
             "options": [
                 {
@@ -608,13 +586,8 @@
                     "isRepeatable": true,
                     "args": {
                         "name": "test",
-                        "generators": {
-                            "script": "function(e){let t=e[e.length-1],a=Math.max(t.split(/::?/).length,1),i=t.split(\"::\").pop();return`cargo t -- --list | awk '/: test$/ { print substr($1, 1, length($1) - 1) }' | awk -F \"::\" '{ print \"${i[i.length-1]==\":\"?\":\":\"\"}\"$${a},int( NF / ${a} ) }'`}",
-                            "postProcess": "function(e){return[...new Set(e.split(`\n`))].map(t=>{let[a,n]=t.split(\" \"),i=parseInt(n),o=a.replaceAll(\":\",\"\");return{name:o.length?`${a}${i?\"\":\"::\"}`:\"\",displayName:o}})}",
-                            "trigger": ":",
-                            "getQueryTerm": ":"
-                        },
-                        "isVariadic": true
+                        "isVariadic": true,
+                        "generatorName": "test_targets"
                     }
                 },
                 {
@@ -665,10 +638,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -809,7 +779,6 @@
         },
         {
             "name": "clean",
-            "icon": "🛠",
             "description": "Remove artifacts that cargo has generated in the past",
             "options": [
                 {
@@ -830,10 +799,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -936,7 +902,6 @@
         },
         {
             "name": "config",
-            "icon": "⚙️",
             "description": "Inspect configuration values",
             "subcommands": [
                 {
@@ -1162,7 +1127,6 @@
                 "doc",
                 "d"
             ],
-            "icon": "📄",
             "description": "Build a package's documentation",
             "options": [
                 {
@@ -1253,10 +1217,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -1388,7 +1349,6 @@
         },
         {
             "name": "fetch",
-            "icon": "📦",
             "description": "Fetch dependencies of a package from the network",
             "options": [
                 {
@@ -1397,10 +1357,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -1478,7 +1435,6 @@
         },
         {
             "name": "fix",
-            "icon": "🔧",
             "description": "Automatically fix lint warnings reported by rustc",
             "options": [
                 {
@@ -1536,13 +1492,8 @@
                     "isRepeatable": true,
                     "args": {
                         "name": "test",
-                        "generators": {
-                            "script": "function(e){let t=e[e.length-1],a=Math.max(t.split(/::?/).length,1),i=t.split(\"::\").pop();return`cargo t -- --list | awk '/: test$/ { print substr($1, 1, length($1) - 1) }' | awk -F \"::\" '{ print \"${i[i.length-1]==\":\"?\":\":\"\"}\"$${a},int( NF / ${a} ) }'`}",
-                            "postProcess": "function(e){return[...new Set(e.split(`\n`))].map(t=>{let[a,n]=t.split(\" \"),i=parseInt(n),o=a.replaceAll(\":\",\"\");return{name:o.length?`${a}${i?\"\":\"::\"}`:\"\",displayName:o}})}",
-                            "trigger": ":",
-                            "getQueryTerm": ":"
-                        },
-                        "isVariadic": true
+                        "isVariadic": true,
+                        "generatorName": "test_targets"
                     }
                 },
                 {
@@ -1593,10 +1544,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -1753,7 +1701,6 @@
         },
         {
             "name": "generate-lockfile",
-            "icon": "📦",
             "description": "Generate the lockfile for a package",
             "options": [
                 {
@@ -1762,10 +1709,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -1834,7 +1778,6 @@
         },
         {
             "name": "git-checkout",
-            "icon": "📦",
             "description": "This subcommand has been removed",
             "hidden": true,
             "options": [
@@ -1897,7 +1840,6 @@
         },
         {
             "name": "init",
-            "icon": "📦",
             "description": "Create a new cargo package in an existing directory",
             "options": [
                 {
@@ -1915,7 +1857,6 @@
                         "suggestions": [
                             {
                                 "name": "git",
-                                "icon": "fig://icon?type=git",
                                 "description": "Initialize with Git"
                             },
                             {
@@ -1928,7 +1869,6 @@
                             },
                             {
                                 "name": "fossil",
-                                "icon": "fig://template?color=818181&badge=🦴",
                                 "description": "Initialize with Fossil"
                             },
                             {
@@ -2043,7 +1983,6 @@
         },
         {
             "name": "install",
-            "icon": "📦",
             "description": "Install a Rust binary. Default location is $HOME/.cargo/bin",
             "options": [
                 {
@@ -2303,17 +2242,14 @@
             ],
             "args": {
                 "name": "crate",
-                "generators": {
-                    "script": "function(e){return`curl -sfL 'https://crates.io/api/v1/crates?q=${encodeURIComponent(e[e.length-1])}&per_page=60'`}",
-                    "postProcess": "function(e){return JSON.parse(e).crates.map(a=>({name:a.name,description:a.description||\"v\"+a.newest_version,icon:\"\\u{1F4E6}\"}))}"
-                },
+                "template": "filepaths",
                 "debounce": true,
-                "isVariadic": true
+                "isVariadic": true,
+                "generatorName": "crates_io_search"
             }
         },
         {
             "name": "locate-project",
-            "icon": "📦",
             "description": "Print a JSON representation of a Cargo.toml file's location",
             "options": [
                 {
@@ -2322,10 +2258,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -2405,7 +2338,6 @@
         },
         {
             "name": "login",
-            "icon": "📦",
             "description": "Save an api token from the registry locally. If token is not specified, it will be read from stdin",
             "options": [
                 {
@@ -2484,7 +2416,6 @@
         },
         {
             "name": "logout",
-            "icon": "📦",
             "description": "Remove an API token from the registry locally",
             "options": [
                 {
@@ -2560,7 +2491,6 @@
         },
         {
             "name": "metadata",
-            "icon": "📦",
             "description": "Output the resolved dependencies of a package, the concrete used versions including overrides, in machine-readable format",
             "options": [
                 {
@@ -2587,10 +2517,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -2681,7 +2608,6 @@
         },
         {
             "name": "new",
-            "icon": "📦",
             "description": "Create a new cargo package at <path>",
             "options": [
                 {
@@ -2699,7 +2625,6 @@
                         "suggestions": [
                             {
                                 "name": "git",
-                                "icon": "fig://icon?type=git",
                                 "description": "Initialize with Git"
                             },
                             {
@@ -2712,7 +2637,6 @@
                             },
                             {
                                 "name": "fossil",
-                                "icon": "fig://template?color=818181&badge=🦴",
                                 "description": "Initialize with Fossil"
                             },
                             {
@@ -2828,7 +2752,6 @@
         },
         {
             "name": "owner",
-            "icon": "📦",
             "description": "Manage the owners of a crate on the registry",
             "options": [
                 {
@@ -2950,7 +2873,6 @@
         },
         {
             "name": "package",
-            "icon": "📦",
             "description": "Assemble the local package into a distributable tarball",
             "options": [
                 {
@@ -3005,10 +2927,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -3118,7 +3037,6 @@
         },
         {
             "name": "pkgid",
-            "icon": "📦",
             "description": "Print a fully qualified package specification",
             "options": [
                 {
@@ -3138,10 +3056,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -3213,7 +3128,6 @@
         },
         {
             "name": "publish",
-            "icon": "📦",
             "description": "Upload a package to the registry",
             "options": [
                 {
@@ -3263,10 +3177,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -3382,7 +3293,6 @@
         },
         {
             "name": "read-manifest",
-            "icon": "📦",
             "description": "Print a JSON representation of a Cargo.toml manifest. Deprecated, use `cargo metadata --no-deps` instead",
             "hidden": true,
             "options": [
@@ -3392,10 +3302,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -3464,7 +3371,6 @@
         },
         {
             "name": "report",
-            "icon": "📦",
             "description": "Generate and display various kinds of reports",
             "subcommands": [
                 {
@@ -3682,7 +3588,6 @@
                 "run",
                 "r"
             ],
-            "icon": "📦",
             "description": "Run a binary or example of the local package",
             "options": [
                 {
@@ -3764,10 +3669,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -3876,7 +3778,6 @@
         },
         {
             "name": "rustc",
-            "icon": "📦",
             "description": "Compile a package, and pass extra options to the compiler",
             "options": [
                 {
@@ -3925,13 +3826,8 @@
                     "isRepeatable": true,
                     "args": {
                         "name": "test",
-                        "generators": {
-                            "script": "function(e){let t=e[e.length-1],a=Math.max(t.split(/::?/).length,1),i=t.split(\"::\").pop();return`cargo t -- --list | awk '/: test$/ { print substr($1, 1, length($1) - 1) }' | awk -F \"::\" '{ print \"${i[i.length-1]==\":\"?\":\":\"\"}\"$${a},int( NF / ${a} ) }'`}",
-                            "postProcess": "function(e){return[...new Set(e.split(`\n`))].map(t=>{let[a,n]=t.split(\" \"),i=parseInt(n),o=a.replaceAll(\":\",\"\");return{name:o.length?`${a}${i?\"\":\"::\"}`:\"\",displayName:o}})}",
-                            "trigger": ":",
-                            "getQueryTerm": ":"
-                        },
-                        "isVariadic": true
+                        "isVariadic": true,
+                        "generatorName": "test_targets"
                     }
                 },
                 {
@@ -3997,10 +3893,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -4137,7 +4030,6 @@
         },
         {
             "name": "rustdoc",
-            "icon": "📦",
             "description": "Build a package's documentation, using specified custom flags",
             "options": [
                 {
@@ -4186,13 +4078,8 @@
                     "isRepeatable": true,
                     "args": {
                         "name": "test",
-                        "generators": {
-                            "script": "function(e){let t=e[e.length-1],a=Math.max(t.split(/::?/).length,1),i=t.split(\"::\").pop();return`cargo t -- --list | awk '/: test$/ { print substr($1, 1, length($1) - 1) }' | awk -F \"::\" '{ print \"${i[i.length-1]==\":\"?\":\":\"\"}\"$${a},int( NF / ${a} ) }'`}",
-                            "postProcess": "function(e){return[...new Set(e.split(`\n`))].map(t=>{let[a,n]=t.split(\" \"),i=parseInt(n),o=a.replaceAll(\":\",\"\");return{name:o.length?`${a}${i?\"\":\"::\"}`:\"\",displayName:o}})}",
-                            "trigger": ":",
-                            "getQueryTerm": ":"
-                        },
-                        "isVariadic": true
+                        "isVariadic": true,
+                        "generatorName": "test_targets"
                     }
                 },
                 {
@@ -4243,10 +4130,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -4383,7 +4267,6 @@
         },
         {
             "name": "search",
-            "icon": "🔎",
             "description": "Search packages in crates.io",
             "options": [
                 {
@@ -4467,13 +4350,11 @@
             ],
             "args": {
                 "name": "query",
-                "generators": {
-                    "script": "function(e){return`curl -sfL 'https://crates.io/api/v1/crates?q=${encodeURIComponent(e[e.length-1])}&per_page=60'`}",
-                    "postProcess": "function(e){return JSON.parse(e).crates.map(a=>({name:a.name,description:a.description||\"v\"+a.newest_version,icon:\"\\u{1F4E6}\"}))}"
-                },
+                "template": "filepaths",
                 "debounce": true,
                 "isVariadic": true,
-                "suggestCurrentToken": true
+                "suggestCurrentToken": true,
+                "generatorName": "crates_io_search"
             }
         },
         {
@@ -4481,7 +4362,6 @@
                 "test",
                 "t"
             ],
-            "icon": "📦",
             "description": "Execute all unit and integration tests and build examples of a local package",
             "options": [
                 {
@@ -4509,13 +4389,8 @@
                     "isRepeatable": true,
                     "args": {
                         "name": "test",
-                        "generators": {
-                            "script": "function(e){let t=e[e.length-1],a=Math.max(t.split(/::?/).length,1),i=t.split(\"::\").pop();return`cargo t -- --list | awk '/: test$/ { print substr($1, 1, length($1) - 1) }' | awk -F \"::\" '{ print \"${i[i.length-1]==\":\"?\":\":\"\"}\"$${a},int( NF / ${a} ) }'`}",
-                            "postProcess": "function(e){return[...new Set(e.split(`\n`))].map(t=>{let[a,n]=t.split(\" \"),i=parseInt(n),o=a.replaceAll(\":\",\"\");return{name:o.length?`${a}${i?\"\":\"::\"}`:\"\",displayName:o}})}",
-                            "trigger": ":",
-                            "getQueryTerm": ":"
-                        },
-                        "isVariadic": true
+                        "isVariadic": true,
+                        "generatorName": "test_targets"
                     }
                 },
                 {
@@ -4596,10 +4471,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -4751,7 +4623,8 @@
             ],
             "args": [
                 {
-                    "name": "TESTNAME"
+                    "name": "TESTNAME",
+                    "generatorName": "test_list"
                 },
                 {
                     "name": "args",
@@ -4762,7 +4635,6 @@
         },
         {
             "name": "tree",
-            "icon": "📦",
             "description": "Display a tree visualization of a dependency graph",
             "options": [
                 {
@@ -4771,10 +4643,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -5011,7 +4880,6 @@
         },
         {
             "name": "uninstall",
-            "icon": "📦",
             "description": "Remove a Rust binary",
             "options": [
                 {
@@ -5112,7 +4980,6 @@
         },
         {
             "name": "update",
-            "icon": "📦",
             "description": "Update dependencies as recorded in the local lock file",
             "options": [
                 {
@@ -5140,10 +5007,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -5227,7 +5091,6 @@
         },
         {
             "name": "vendor",
-            "icon": "📦",
             "description": "Vendor all dependencies for a project locally",
             "options": [
                 {
@@ -5236,10 +5099,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -5348,7 +5208,6 @@
         },
         {
             "name": "verify-project",
-            "icon": "📦",
             "description": "Check correctness of crate manifest",
             "options": [
                 {
@@ -5357,10 +5216,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -5429,7 +5285,6 @@
         },
         {
             "name": "version",
-            "icon": "📦",
             "description": "Show version information",
             "options": [
                 {
@@ -5498,7 +5353,6 @@
         },
         {
             "name": "yank",
-            "icon": "📦",
             "description": "Remove a pushed crate from the index",
             "options": [
                 {
@@ -5602,7 +5456,6 @@
         },
         {
             "name": "help",
-            "icon": "📦",
             "description": "Print this message or the help of the given subcommand(s)",
             "options": [
                 {
@@ -5660,7 +5513,6 @@
         },
         {
             "name": "outdated",
-            "icon": "📦",
             "description": "Displays information about project dependency versions",
             "options": [
                 {
@@ -5776,10 +5628,7 @@
                     "args": {
                         "name": "PATH",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-rs"
                     }
                 },
                 {
@@ -5854,7 +5703,6 @@
         },
         {
             "name": "flamegraph",
-            "icon": "🔥",
             "description": "Generates a flamegraph of the current crate",
             "options": [
                 {
@@ -5896,7 +5744,6 @@
         },
         {
             "name": "fmt",
-            "icon": "🛠",
             "description": "This utility formats all bin and lib files of the current crate using rustfmt",
             "subcommands": [
                 {
@@ -5904,10 +5751,7 @@
                     "description": "All other arguments are passed to rustfmt",
                     "args": {
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-rs"
                     },
                     "options": [
                         {
@@ -5932,10 +5776,8 @@
                             "name": "--config-path",
                             "description": "Path for the configuration file",
                             "args": {
-                                "generators": {
-                                    "template": "filepaths",
-                                    "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                                }
+                                "template": "filepaths",
+                                "filterTemplateName": "filter-rustfmt-toml"
                             }
                         },
                         {
@@ -6026,10 +5868,7 @@
                     "args": {
                         "name": "manifest-path",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-toml"
                     }
                 },
                 {
@@ -6058,7 +5897,6 @@
         },
         {
             "name": "clippy",
-            "icon": "📎",
             "description": "Runs the Clippy linter",
             "subcommands": [
                 {
@@ -6127,7 +5965,6 @@
         },
         {
             "name": "audit",
-            "icon": "📚",
             "description": "Runs the cargo audit tool",
             "options": [
                 {
@@ -6183,10 +6020,7 @@
                             }
                         ],
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(m=[])=>{let u=m.filter(({name:g=\"\",type:z})=>{if(i!==\"filter\"&&z===\"folder\")return i===\"always\";if(c.has(g)||n&&new RegExp(n.source,n.flags).test(g))return!0;let[,...k]=g.split(\".\");if(k.length>=1){let R=k.length-1,P=k[R];do{if(d.has(P))return!0;R-=1,P=[k[R],P].join(\".\")}while(R>=0)}return!1});return!o&&!s?u:u.map(g=>Object.assign(Object.assign({},g),(g.type===\"file\"?o:s)||{}))}"
-                        }
+                        "filterTemplateName": "filter-cargo-lock"
                     }
                 },
                 {
@@ -6229,7 +6063,6 @@
         },
         {
             "name": "add",
-            "icon": "📦",
             "description": "Add dependencies to a Cargo.toml manifest file",
             "options": [
                 {
@@ -6395,12 +6228,10 @@
             ],
             "args": {
                 "name": "DEP_ID",
-                "generators": {
-                    "script": "function(e){return`curl -sfL 'https://crates.io/api/v1/crates?q=${encodeURIComponent(e[e.length-1])}&per_page=60'`}",
-                    "postProcess": "function(e){return JSON.parse(e).crates.map(a=>({name:a.name,description:a.description||\"v\"+a.newest_version,icon:\"\\u{1F4E6}\"}))}"
-                },
+                "template": "filepaths",
                 "debounce": true,
-                "isVariadic": true
+                "isVariadic": true,
+                "generatorName": "crates_io_search"
             }
         }
     ],
@@ -6485,6 +6316,5 @@
             "name": "--offline",
             "description": "Run without accessing the network"
         }
-    ],
-    "generateSpec": "_NuFrRa_(e,t)=>V(void 0,null,function*(){let a=[],n=(yield t(\"cargo --list\")).split(`\n`).filter((i,o)=>o!=0).map(i=>i.trim().split(/\\s+/,1)[0]);if(n.includes(\"fmt\")){let i={name:\"fmt\",icon:\"\\u{1F6E0}\",description:\"This utility formats all bin and lib files of the current crate using rustfmt\",subcommands:[{name:\"--\",description:\"All other arguments are passed to rustfmt\",args:{generators:(0,r.filepaths)({extensions:[\"rs\"]})},options:[{name:\"--check\",description:\"Run in 'check' mode. Exits with 0 if input is formatted correctly. Exits with 1 and prints a diff if formatting is required\"},{name:\"--emit\",description:\"What data to emit and how\",args:{suggestions:[\"files\",\"stdout\"]}},{name:\"--backup\",description:\"Backup any modified files\"},{name:\"--config-path\",description:\"Path for the configuration file\",args:{generators:(0,r.filepaths)({equals:[\"rustfmt.toml\"]})}},{name:\"--edition\",description:\"Rust edition to use\",args:{suggestions:x}},{name:\"--print-config\",description:\"Dumps a default or minimal config to PATH\",args:[{name:\"verbosity\",suggestions:[\"default\",\"minimal\",\"current\"]},{name:\"PATH\",template:\"filepaths\"}]},{name:[\"-l\",\"--files-with-diff\"],description:\"Prints the names of mismatched files that were formatted\"}]}],options:[{name:\"--check\",description:\"Run rustfmt in check mode\"},{name:\"--all\",description:\"Format all packages, and also their local path-based dependencies\"},{name:[\"-h\",\"--help\"],description:\"Print help information\"},{name:[\"-q\",\"--quiet\"],description:\"No output printed to stdout\"},{name:[\"-v\",\"--verbose\"],description:\"Use verbose output\"},{name:\"--version\",description:\"Print rustfmt version and exit\"},{name:\"--manifest-path\",description:\"Specify path to Cargo.toml\",args:{name:\"manifest-path\",generators:(0,r.filepaths)({equals:[\"Cargo.toml\"]})}},{name:\"--message-format\",description:\"Specify message-format\",args:{name:\"message-format\",suggestions:[\"short\",\"json\",\"human\"]}},{name:[\"-p\",\"--package\"],description:\"Specify package to format\",args:{name:\"package\"}}]};a.push(i)}if(n.includes(\"clippy\")){let i={name:\"clippy\",icon:\"\\u{1F4CE}\",description:\"Runs the Clippy linter\",subcommands:[{name:\"--\",description:\"All other arguments are passed to clippy\",options:[{name:[\"-W\",\"--warn\"],description:\"Set lint warnings\",args:{}},{name:[\"-A\",\"--allow\"],description:\"Set lint allowed\",args:{}},{name:[\"-D\",\"--deny\"],description:\"Set lint denied\",args:{}},{name:[\"-F\",\"--forbid\"],description:\"Set lint forbidden\",args:{}}]}],options:[{name:\"--no-deps\",description:\"Run Clippy only on the given crate, without linting the dependencies\"},{name:\"--fix\",description:\"Automatically apply lint suggestions. This flag implies `--no-deps`\"},{name:\"--allow-dirty\",description:\"Allow fix to apply even if the working directory is dirty\",dependsOn:[\"--fix\"]},{name:\"--allow-staged\",description:\"Allow fix to apply even if the working directory has staged changes\",dependsOn:[\"--fix\"]}]};a.push(i)}if(n.includes(\"flamegraph\")){let i={name:\"flamegraph\",icon:\"\\u{1F525}\",description:\"Generates a flamegraph of the current crate\",options:[{name:\"--deterministic\",description:\"Colors are selected such that the color of a function does not change between runs\"},{name:\"--dev\",description:\"Build with the dev profile\"},{name:[\"-i\",\"--inverted\"],description:\"Plot the flame graph up-side-down\"},{name:\"--no-default-features\",description:\"Disable default features\"},{name:\"--open\",description:\"Open the output .svg file with default program\"},{name:\"--reverse\",description:\"Generate stack-reversed flame graph\"},{name:\"--root\",description:\"Run with root privileges (using `sudo`)\"},{name:\"--no-inline\",description:\"Disable inlining for perf script because of performance issues\"}]};a.push(i)}if(n.includes(\"audit\")){let i={name:\"audit\",icon:\"\\u{1F4DA}\",description:\"Runs the cargo audit tool\",options:[{name:[\"-d\",\"--db\"],description:\"Advisory database git repo path\",args:{name:\"DB\",template:\"folders\"}},{name:[\"-D\",\"--deny\"],description:\"Exit with an error on the argument\",args:{isVariadic:!0,suggestions:[{name:\"warnings\",description:\"Warnings (any)\"},{name:\"unmaintained\",description:\"Unmaintained crates\"},{name:\"unsound\",description:\"Unsound Rust code\"},{name:\"yanked\",description:\"Yanked crates\"}]}},{name:[\"-f\",\"--file\"],description:\"Cargo lockfile to inspect\",args:{suggestions:[{name:\"-\",description:\"Stdin\"}],generators:(0,r.filepaths)({equals:[\"Cargo.lock\"]})}},{name:[\"-n\",\"--no-fetch\"],description:\"Do not perform a git fetch on the advisory DB\"},{name:\"--stale\",description:\"Allow stale database\"},{name:\"--target-arch\",description:\"Filter vulnerabilities by CPU\",args:{}},{name:\"--target-os\",description:\"Filter vulnerabilities by OS\",args:{}},{name:[\"-u\",\"--url\"],description:\"URL for advisory database git repo\"},{name:\"--json\",description:\"Output report in JSON format\"},{name:\"--no-local-crates\",description:\"Vulnerability querying does not consider local crates\"}]};a.push(i)}if(n.includes(\"outdated\")){let i={name:\"outdated\",icon:\"\\u{1F4E6}\",description:\"Displays information about project dependency versions\",options:[{name:[\"-a\",\"--aggressive\"],description:\"Ignores channels for latest updates\"},{name:\"--color\",description:\"Output coloring\",args:{name:\"COLOR\",suggestions:[\"always\",\"never\",\"auto\"],default:\"auto\"}},{name:[\"-d\",\"--depth\"],description:\"How deep in the dependency chain to search (Defaults to all dependencies when omitted)\",args:{name:\"DEPTH\"},exclusiveOn:[\"-R\",\"--root-deps-only\"]},{name:[\"-x\",\"--exclude\"],description:\"Exclude a dependency from the output\",isRequired:!0,args:{name:\"DEPENDENCY\",generators:v}},{name:\"--exit-code\",description:\"The exit code to return on new versions found\",args:{name:\"NUM\",suggestions:[\"0\",\"1\"],default:\"0\"}},{name:\"--features\",description:\"Space-separated list of features\",args:{name:\"FEATURES\",generators:l,isVariadic:!0}},{name:\"--format\",description:\"Output formatting\",args:{name:\"FORMAT\",suggestions:[\"json\",\"list\"],default:\"list\"}},{name:[\"-h\",\"--help\"],description:\"Prints help information\"},{name:[\"-i\",\"--ignore\"],description:\"Dependencies to not print in the output\",args:{name:\"DEPENDENCY\",generators:v}},{name:[\"-e\",\"--ignore-external-rel\"],description:\"Ignore relative dependencies external to workspace and check root dependencies only\"},{name:[\"-m\",\"--manifest-path\"],description:\"Path to the Cargo.toml file to use\",args:{name:\"PATH\",generators:(0,r.filepaths)({equals:[\"Cargo.toml\"]})}},{name:[\"-o\",\"--offline\"],description:\"Run without accessing the network\"},{name:[\"-p\",\"--packages\"],description:\"Packages to inspect for updates\",args:{name:\"PACKAGES\",generators:v}},{name:[\"-q\",\"--quiet\"],description:\"Suppresses warnings\"},{name:[\"-r\",\"--root\"],description:\"Package to treat as the root package\",args:{name:\"PACKAGE\",generators:v}},{name:[\"-R\",\"--root-deps-only\"],description:\"Only check root dependencies\",exclusiveOn:[\"-d\",\"--depth\"]},{name:[\"-V\",\"--version\"],description:\"Prints version information\"},{name:[\"-v\",\"--verbose\"],description:\"Use verbose output\"},{name:[\"-w\",\"--workspace\"],description:\"Checks updates for all workspace members rather than only the root package\"}]};a.push(i)}return{name:\"cargo\",subcommands:a}})"
+    ]
 }

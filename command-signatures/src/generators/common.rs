@@ -1,7 +1,9 @@
+use lazy_static::lazy_static;
+use regex::Regex;
 use serde::Deserialize;
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use warp_completion_metadata::{
-    CommandBuilder, Generator, GeneratorResults, GeneratorResultsCollector, Suggestion,
+    CommandBuilder, Generator, GeneratorResults, GeneratorResultsCollector, Priority, Suggestion,
 };
 
 /// Shell command that reads ~/.ssh/config and all files referenced by Include directives.
@@ -116,6 +118,106 @@ pub fn dependencies_generator() -> Generator {
     )
 }
 
+/// Builds the command listing systemd unit names for the system or user manager.
+///
+/// Loaded units and installed unit files are merged so units that are not currently
+/// in memory are still offered; `awk` keeps the first line seen for each unit name.
+fn systemd_units_command(user_scope: bool) -> CommandBuilder {
+    let scope = if user_scope { " --user" } else { "" };
+    CommandBuilder::pipe(
+        CommandBuilder::single_command(format!(
+            "{{ systemctl{scope} list-units --full --no-legend --no-pager --plain --all; systemctl{scope} list-unit-files --full --no-legend --no-pager --plain --all; }}"
+        )),
+        CommandBuilder::single_command("awk '!seen[$1]++ { print }'"),
+    )
+}
+
+/// Parses `systemctl list-units` / `list-unit-files` output into unit-name suggestions,
+/// described by the state column when one is present.
+pub fn systemd_units(output: &str) -> GeneratorResults {
+    let mut seen = HashSet::new();
+    output
+        .lines()
+        .filter_map(|line| {
+            let mut parts = line.split_whitespace();
+            let name = parts.next()?;
+            if name.is_empty() || !seen.insert(name.to_string()) {
+                return None;
+            }
+            match parts.next() {
+                Some(state) => Some(Suggestion::with_description(name, state)),
+                None => Some(Suggestion::new(name)),
+            }
+        })
+        .collect_unordered_results()
+}
+
+/// Returns a generator that lists units known to the system service manager.
+pub fn systemd_units_generator() -> Generator {
+    Generator::script(systemd_units_command(false), systemd_units)
+}
+
+/// Returns a generator that lists units known to the calling user's service manager.
+pub fn systemd_user_units_generator() -> Generator {
+    Generator::script(systemd_units_command(true), systemd_units)
+}
+
+/// Parses `ps -o comm` output into suggestions naming the running executables.
+///
+/// macOS reports absolute executable paths where Linux reports bare names, so each
+/// line is reduced to its basename, which is what process-name matching expects.
+/// A header row is dropped for the `ps` implementations that print one even when
+/// the `comm=` format asks for none.
+pub fn process_names(output: &str) -> GeneratorResults {
+    let mut seen = HashSet::new();
+    output
+        .lines()
+        .filter_map(|line| {
+            let path = line.trim();
+            if path.is_empty() || path == "COMM" || path == "COMMAND" {
+                return None;
+            }
+            let name = path.rsplit_once('/').map_or(path, |(_, name)| name);
+            if name.is_empty() || !seen.insert(name.to_string()) {
+                return None;
+            }
+            Some(if name == path {
+                Suggestion::new(name)
+            } else {
+                Suggestion::with_description(name, path)
+            })
+        })
+        .collect_unordered_results()
+}
+
+/// Returns a cross-platform generator that lists the names of running processes.
+///
+/// Shared by the commands that select processes by name, such as `pkill` and `killall`.
+pub fn process_names_generator() -> Generator {
+    Generator::script(
+        CommandBuilder::pipe(
+            CommandBuilder::single_command("ps -A -o comm="),
+            CommandBuilder::single_command("sort -u"),
+        ),
+        process_names,
+    )
+}
+
+/// Parses `kill -l` output into signal-name suggestions.
+pub fn signal_names(output: &str) -> GeneratorResults {
+    SIGNAL_NAME
+        .find_iter(output)
+        .map(|capture| Suggestion::new(capture.as_str()))
+        .collect_unordered_results()
+}
+
+/// Returns a generator that lists the signal names accepted by the shell's `kill`.
+///
+/// Shared by the commands that take a signal, such as `kill` and `pkill`.
+pub fn signal_names_generator() -> Generator {
+    Generator::script(CommandBuilder::single_command("env kill -l"), signal_names)
+}
+
 /// Returns a cross-platform generator that lists local user names.
 ///
 /// Uses `getent passwd` on Linux, `dscl` on macOS, and falls back to `/etc/passwd`.
@@ -132,6 +234,52 @@ pub fn users_generator() -> Generator {
                     !line.is_empty() && !line.starts_with('_') && !line.starts_with('#')
                 })
                 .map(|name| Suggestion::with_description(name.trim(), "User"))
+                .collect_unordered_results()
+        },
+    )
+}
+
+lazy_static! {
+    static ref SIGNAL_NAME: Regex = Regex::new(r"(\w+)").unwrap();
+}
+
+/// Returns a generator that lists installed pacman packages (`pacman -Q`).
+///
+/// Shared by `pacman` and the AUR helpers that wrap it for installed-package queries, such as
+/// `yay` and `paru`.
+pub fn pacman_installed_packages_generator() -> Generator {
+    Generator::script(
+        CommandBuilder::pipe(
+            CommandBuilder::single_command("pacman -Q"),
+            CommandBuilder::single_command("awk '{print $1}'"),
+        ),
+        |output| {
+            output
+                .lines()
+                .map(|package_name| Suggestion::with_description(package_name, "package"))
+                .collect_unordered_results()
+        },
+    )
+}
+
+/// Returns a generator that lists pacman package archive files (`*.pkg.tar*`) in the current
+/// directory, for completing the local package file target of `-U`/`--upgrade`.
+///
+/// Shared by `pacman`, `yay`, and `paru`, which all accept the same archive formats.
+pub fn pacman_pkg_tar_files_in_cwd_generator() -> Generator {
+    Generator::script(
+        CommandBuilder::single_command(
+            r#"find . -maxdepth 1 -type f -name '*.pkg.tar' -o -name '*.pkg.tar.zst' -o -name '*.pkg.tar.gz' -o -name '*.pkg.tar.xz'"#,
+        ),
+        |output| {
+            // We should prioritize .pkg.tar files over the already installed packages.
+            output
+                .lines()
+                .filter(|file| !file.is_empty())
+                .map(|file| {
+                    Suggestion::with_description(file, ".pkg.tar file")
+                        .with_priority(Priority::most_important())
+                })
                 .collect_unordered_results()
         },
     )

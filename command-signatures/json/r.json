@@ -1,7 +1,6 @@
 {
     "name": "R",
     "description": "Start R or invoke an R tool using CMD",
-    "icon": "https://www.r-project.org/favicon-32x32.png",
     "subcommands": [
         {
             "name": "RHOME",
@@ -20,16 +19,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": "--no-timing",
@@ -44,10 +41,8 @@
                         {
                             "name": "infile",
                             "description": "A file with R code to be executed",
-                            "generators": {
-                                "template": "filepaths",
-                                "filterTemplateSuggestions": "_NuFrRa_(g=[])=>{let p=g.filter(({name:d=\"\",type:_})=>{if(n!==\"filter\"&&_===\"folder\")return n===\"always\";if(u.has(d)||o&&new RegExp(o.source,o.flags).test(d))return!0;let[,...h]=d.split(\".\");if(h.length>=1){let S=h.length-1,k=h[S];do{if(c.has(k))return!0;S-=1,k=[h[S],k].join(\".\")}while(S>=0)}return!1});return!r&&!a?p:p.map(d=>Object.assign(Object.assign({},d),(d.type===\"file\"?r:a)||{}))}"
-                            }
+                            "template": "filepaths",
+                            "filterTemplateName": "filter-r-src"
                         },
                         {
                             "name": "outfile",
@@ -64,16 +59,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         }
                     ],
                     "args": {
@@ -81,10 +74,7 @@
                         "description": "Source files to be compiled",
                         "isVariadic": true,
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(g=[])=>{let p=g.filter(({name:d=\"\",type:_})=>{if(n!==\"filter\"&&_===\"folder\")return n===\"always\";if(u.has(d)||o&&new RegExp(o.source,o.flags).test(d))return!0;let[,...h]=d.split(\".\");if(h.length>=1){let S=h.length-1,k=h[S];do{if(c.has(k))return!0;S-=1,k=[h[S],k].join(\".\")}while(S>=0)}return!1});return!r&&!a?p:p.map(d=>Object.assign(Object.assign({},d),(d.type===\"file\"?r:a)||{}))}"
-                        }
+                        "filterTemplateName": "filter-r-archive"
                     }
                 },
                 {
@@ -96,16 +86,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": [
@@ -156,8 +144,7 @@
                                 "--debug",
                                 "-d"
                             ],
-                            "description": "Build a debug DLL (Windows only)",
-                            "icon": "🪲"
+                            "description": "Build a debug DLL (Windows only)"
                         }
                     ],
                     "args": {
@@ -165,10 +152,7 @@
                         "description": "The object files to be included in the shared object/DLL",
                         "isVariadic": true,
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(g=[])=>{let p=g.filter(({name:d=\"\",type:_})=>{if(n!==\"filter\"&&_===\"folder\")return n===\"always\";if(u.has(d)||o&&new RegExp(o.source,o.flags).test(d))return!0;let[,...h]=d.split(\".\");if(h.length>=1){let S=h.length-1,k=h[S];do{if(c.has(k))return!0;S-=1,k=[h[S],k].join(\".\")}while(S>=0)}return!1});return!r&&!a?p:p.map(d=>Object.assign(Object.assign({},d),(d.type===\"file\"?r:a)||{}))}"
-                        }
+                        "filterTemplateName": "filter-r-archive"
                     }
                 },
                 {
@@ -180,16 +164,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": [
@@ -207,8 +189,7 @@
                                 "--debug",
                                 "-d"
                             ],
-                            "description": "Turn on debugging messages",
-                            "icon": "🪲"
+                            "description": "Turn on debugging messages"
                         },
                         {
                             "name": [
@@ -220,10 +201,7 @@
                             "args": {
                                 "name": "LIB",
                                 "description": "Path to the R library tree to install to",
-                                "generators": {
-                                    "script": "Rscript -e '.libPaths()'",
-                                    "postProcess": "_NuFrRa_e=>e.includes(\"not found\")?[]:e.split(`\n`).map(t=>({name:t.replace(/\\d+/,\"\").replace(\"[]\",\"\").trim(),description:\"Library\"}))"
-                                }
+                                "generatorName": "rscript_libpaths"
                             }
                         },
                         {
@@ -286,8 +264,7 @@
                         },
                         {
                             "name": "--build",
-                            "description": "Build binaries of the installed package(s)",
-                            "icon": "🛠"
+                            "description": "Build binaries of the installed package(s)"
                         },
                         {
                             "name": "--install-tests",
@@ -490,15 +467,12 @@
                     "args": {
                         "name": "packages",
                         "description": "Directories with the package sources",
-                        "generators": {
-                            "template": "folders"
-                        }
+                        "template": "folders"
                     }
                 },
                 {
                     "name": "REMOVE",
                     "description": "Remove add-on packages",
-                    "icon": "🗑",
                     "args": {
                         "name": "packages",
                         "description": "Packages to remove",
@@ -511,16 +485,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": [
@@ -532,10 +504,7 @@
                             "args": {
                                 "name": "LIB",
                                 "description": "Library tree",
-                                "generators": {
-                                    "script": "Rscript -e '.libPaths()'",
-                                    "postProcess": "_NuFrRa_e=>e.includes(\"not found\")?[]:e.split(`\n`).map(t=>({name:t.replace(/\\d+/,\"\").replace(\"[]\",\"\").trim(),description:\"Library\"}))"
-                                }
+                                "generatorName": "rscript_libpaths"
                             }
                         }
                     ]
@@ -543,14 +512,11 @@
                 {
                     "name": "build",
                     "description": "Build R packages from package sources",
-                    "icon": "🛠",
                     "args": {
                         "name": "pakgdirs",
                         "description": "Package directories",
                         "isVariadic": true,
-                        "generators": {
-                            "template": "folders"
-                        }
+                        "template": "folders"
                     },
                     "options": [
                         {
@@ -558,16 +524,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": "--force",
@@ -657,23 +621,20 @@
                 {
                     "name": "check",
                     "description": "Check R packages from package sources",
-                    "icon": "✅",
                     "options": [
                         {
                             "name": [
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": [
@@ -685,9 +646,7 @@
                                 "name": "LIB",
                                 "description": "Library tree",
                                 "default": ".",
-                                "generators": {
-                                    "template": "folders"
-                                }
+                                "template": "folders"
                             }
                         },
                         {
@@ -701,9 +660,7 @@
                                 "name": "directory",
                                 "description": "Directory for output",
                                 "default": ".",
-                                "generators": {
-                                    "template": "folders"
-                                }
+                                "template": "folders"
                             }
                         },
                         {
@@ -760,8 +717,7 @@
                         },
                         {
                             "name": "--timings",
-                            "description": "Record timings for examples",
-                            "icon": "⏱"
+                            "description": "Record timings for examples"
                         },
                         {
                             "name": "--install-args",
@@ -780,9 +736,7 @@
                                 "name": "directory",
                                 "description": "Directory with the tests directory",
                                 "default": "tests",
-                                "generators": {
-                                    "template": "folders"
-                                }
+                                "template": "folders"
                             }
                         },
                         {
@@ -806,8 +760,7 @@
                         },
                         {
                             "name": "--as-cran",
-                            "description": "Select customizations similar to those used by CRAN",
-                            "icon": "https://www.r-project.org/favicon-32x32.png"
+                            "description": "Select customizations similar to those used by CRAN"
                         },
                         {
                             "name": "--extra-arch",
@@ -840,32 +793,26 @@
                         "description": "Packages to check",
                         "isVariadic": true,
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(g=[])=>{let p=g.filter(({name:d=\"\",type:_})=>{if(n!==\"filter\"&&_===\"folder\")return n===\"always\";if(u.has(d)||o&&new RegExp(o.source,o.flags).test(d))return!0;let[,...h]=d.split(\".\");if(h.length>=1){let S=h.length-1,k=h[S];do{if(c.has(k))return!0;S-=1,k=[h[S],k].join(\".\")}while(S>=0)}return!1});return!r&&!a?p:p.map(d=>Object.assign(Object.assign({},d),(d.type===\"file\"?r:a)||{}))}"
-                        }
+                        "filterTemplateName": "filter-r-archive"
                     }
                 },
                 {
                     "name": "LINK",
                     "description": "Perform the specified linkcmd",
-                    "icon": "🔗",
                     "options": [
                         {
                             "name": [
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         }
                     ],
                     "args": {
@@ -876,23 +823,20 @@
                 {
                     "name": "rprof",
                     "description": "Post-process profiling information from `Rprof()`",
-                    "icon": "⏱",
                     "options": [
                         {
                             "name": [
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": "--lines",
@@ -944,9 +888,7 @@
                         "description": "File generated by `Rprof()`",
                         "isOptional": true,
                         "default": "Rprof.out",
-                        "generators": {
-                            "template": "filepaths"
-                        }
+                        "template": "filepaths"
                     }
                 },
                 {
@@ -958,16 +900,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": [
@@ -1054,10 +994,7 @@
                         "name": "file",
                         "description": "R doc file to convert",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(g=[])=>{let p=g.filter(({name:d=\"\",type:_})=>{if(n!==\"filter\"&&_===\"folder\")return n===\"always\";if(u.has(d)||o&&new RegExp(o.source,o.flags).test(d))return!0;let[,...h]=d.split(\".\");if(h.length>=1){let S=h.length-1,k=h[S];do{if(c.has(k))return!0;S-=1,k=[h[S],k].join(\".\")}while(S>=0)}return!1});return!r&&!a?p:p.map(d=>Object.assign(Object.assign({},d),(d.type===\"file\"?r:a)||{}))}"
-                        }
+                        "filterTemplateName": "filter-rd"
                     }
                 },
                 {
@@ -1069,16 +1006,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": "--batch",
@@ -1173,9 +1108,7 @@
                             "args": {
                                 "name": "working dir",
                                 "description": "Working directory for the build",
-                                "generators": {
-                                    "template": "folders"
-                                }
+                                "template": "folders"
                             }
                         },
                         {
@@ -1191,9 +1124,7 @@
                     "args": {
                         "name": "files or pkgs",
                         "description": "Rd files, or a directory with the sources of a pkg, or an installed pkg",
-                        "generators": {
-                            "template": "folders"
-                        }
+                        "template": "folders"
                     }
                 },
                 {
@@ -1205,16 +1136,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": [
@@ -1249,7 +1178,6 @@
                         {
                             "name": "--package",
                             "description": "Package name",
-                            "icon": "📦",
                             "requiresSeparator": true,
                             "args": {
                                 "name": "package",
@@ -1303,10 +1231,7 @@
                         "name": "file",
                         "description": "R doc file to convert",
                         "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateSuggestions": "_NuFrRa_(g=[])=>{let p=g.filter(({name:d=\"\",type:_})=>{if(n!==\"filter\"&&_===\"folder\")return n===\"always\";if(u.has(d)||o&&new RegExp(o.source,o.flags).test(d))return!0;let[,...h]=d.split(\".\");if(h.length>=1){let S=h.length-1,k=h[S];do{if(c.has(k))return!0;S-=1,k=[h[S],k].join(\".\")}while(S>=0)}return!1});return!r&&!a?p:p.map(d=>Object.assign(Object.assign({},d),(d.type===\"file\"?r:a)||{}))}"
-                        }
+                        "filterTemplateName": "filter-r"
                     }
                 },
                 {
@@ -1318,16 +1243,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": "--engine",
@@ -1367,9 +1290,7 @@
                     "args": {
                         "name": "file",
                         "description": "File to process",
-                        "generators": {
-                            "template": "folders"
-                        }
+                        "template": "folders"
                     }
                 },
                 {
@@ -1381,16 +1302,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": "--driver",
@@ -1423,7 +1342,6 @@
                         {
                             "name": "--clean",
                             "description": "Remove some of the created files",
-                            "icon": "🧹",
                             "requiresSeparator": true,
                             "args": {
                                 "name": "method",
@@ -1471,9 +1389,7 @@
                     "args": {
                         "name": "file",
                         "description": "Vignette to build",
-                        "generators": {
-                            "template": "filepaths"
-                        }
+                        "template": "filepaths"
                     }
                 },
                 {
@@ -1485,32 +1401,26 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         }
                     ],
                     "args": [
                         {
                             "name": "from",
                             "description": "'From' R output file (or '-' for stdin)",
-                            "generators": {
-                                "template": "filepaths"
-                            }
+                            "template": "filepaths"
                         },
                         {
                             "name": "to",
                             "description": "'To' R output file",
-                            "generators": {
-                                "template": "filepaths"
-                            }
+                            "template": "filepaths"
                         }
                     ]
                 },
@@ -1523,16 +1433,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": "--cppflags",
@@ -1631,16 +1539,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": [
@@ -1678,16 +1584,14 @@
                                 "--help",
                                 "-h"
                             ],
-                            "description": "Print help message and exit",
-                            "icon": "❔"
+                            "description": "Print help message and exit"
                         },
                         {
                             "name": [
                                 "--version",
                                 "-v"
                             ],
-                            "description": "Print version info and exit",
-                            "icon": "📣"
+                            "description": "Print version info and exit"
                         },
                         {
                             "name": [
@@ -1748,16 +1652,14 @@
                 "--help",
                 "-h"
             ],
-            "description": "Print help message and exit",
-            "icon": "❔"
+            "description": "Print help message and exit"
         },
         {
             "name": [
                 "--version",
                 "-v"
             ],
-            "description": "Print version info and exit",
-            "icon": "📣"
+            "description": "Print version info and exit"
         },
         {
             "name": "--encoding",
@@ -1884,7 +1786,6 @@
         {
             "name": "--verbose",
             "description": "Print more information about progress",
-            "icon": "📣",
             "exclusiveOn": [
                 "--quiet",
                 "--silent",
@@ -1899,7 +1800,6 @@
                 "-d"
             ],
             "description": "Run R through a debugger",
-            "icon": "🪲",
             "requiresSeparator": true,
             "args": {
                 "name": "debugger",
@@ -1955,10 +1855,8 @@
             "args": {
                 "name": "file",
                 "description": "File to run",
-                "generators": {
-                    "template": "filepaths",
-                    "filterTemplateSuggestions": "_NuFrRa_(g=[])=>{let p=g.filter(({name:d=\"\",type:_})=>{if(n!==\"filter\"&&_===\"folder\")return n===\"always\";if(u.has(d)||o&&new RegExp(o.source,o.flags).test(d))return!0;let[,...h]=d.split(\".\");if(h.length>=1){let S=h.length-1,k=h[S];do{if(c.has(k))return!0;S-=1,k=[h[S],k].join(\".\")}while(S>=0)}return!1});return!r&&!a?p:p.map(d=>Object.assign(Object.assign({},d),(d.type===\"file\"?r:a)||{}))}"
-                }
+                "template": "filepaths",
+                "filterTemplateName": "filter-r"
             }
         },
         {

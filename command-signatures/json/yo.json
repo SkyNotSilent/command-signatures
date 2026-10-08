@@ -3,20 +3,15 @@
     "description": "Yeoman generator",
     "args": {
         "name": "generator",
-        "generators": {
-            "script": "yo --generators",
-            "postProcess": "function(n){try{return n.split(`\n`).filter(e=>e.trim()&&e!==\"Available Generators:\").map(e=>({name:e.trim(),icon:\"https://avatars.githubusercontent.com/u/1714870?v=4\",displayName:o(e),description:`${o(e)} Generator`,priority:100,options:[{name:\"--help\",description:`Help of \"${o(e)}\" generator`}]}))}catch(e){return console.error(e),[]}}"
-        },
+        "generatorName": "completions",
         "suggestions": [
             {
                 "name": "doctor",
-                "description": "Running sanity checks on your system",
-                "icon": "fig://icon?type=alert"
+                "description": "Running sanity checks on your system"
             },
             {
                 "name": "completion",
-                "description": "To enable shell completion for the yo command",
-                "icon": "fig://icon?type=asterisk"
+                "description": "To enable shell completion for the yo command"
             }
         ],
         "isCommand": true,

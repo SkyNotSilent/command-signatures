@@ -1,7 +1,6 @@
 {
     "name": "Rscript",
     "description": "Scripting Front-End for R",
-    "icon": "https://www.r-project.org/favicon-32x32.png",
     "options": [
         {
             "name": "-e",
@@ -14,8 +13,7 @@
         },
         {
             "name": "--help",
-            "description": "Print usage and exit",
-            "icon": "❔"
+            "description": "Print usage and exit"
         },
         {
             "name": "--version",
@@ -23,13 +21,11 @@
         },
         {
             "name": "--verbose",
-            "description": "Print information on progress",
-            "icon": "📣"
+            "description": "Print information on progress"
         },
         {
             "name": "--no-echo",
-            "description": "Run as quietly as possible",
-            "icon": "🙊"
+            "description": "Run as quietly as possible"
         },
         {
             "name": "--no-restore",
@@ -37,8 +33,7 @@
         },
         {
             "name": "--save",
-            "description": "Do save workspace at the end of the session",
-            "icon": "💾"
+            "description": "Do save workspace at the end of the session"
         },
         {
             "name": "--no-environ",
@@ -64,7 +59,6 @@
             "name": "--default-packages",
             "description": "Comma separated list of default packages",
             "requiresSeparator": true,
-            "icon": "📦",
             "args": {
                 "name": "packages",
                 "description": "A comma-separated set of package names, or 'NULL'"
@@ -76,10 +70,8 @@
             "name": "file",
             "description": "R script to run",
             "isScript": true,
-            "generators": {
-                "template": "filepaths",
-                "filterTemplateSuggestions": "_NuFrRa_(p=[])=>{let c=p.filter(({name:u=\"\",type:F})=>{if(i!==\"filter\"&&F===\"folder\")return i===\"always\";if(f.has(u)||r&&new RegExp(r.source,r.flags).test(u))return!0;let[,...g]=u.split(\".\");if(g.length>=1){let h=g.length-1,w=g[h];do{if(a.has(w))return!0;h-=1,w=[g[h],w].join(\".\")}while(h>=0)}return!1});return!o&&!s?c:c.map(u=>Object.assign(Object.assign({},u),(u.type===\"file\"?o:s)||{}))}"
-            }
+            "template": "filepaths",
+            "filterTemplateName": "filter-r"
         },
         {
             "name": "args",

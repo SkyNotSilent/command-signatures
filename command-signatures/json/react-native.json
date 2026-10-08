@@ -32,11 +32,7 @@
                     "description": "Path to the root JS file, either absolute or relative to JS root",
                     "args": {
                         "name": "file",
-                        "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateName": "filter-js-files"
-                        }
+                        "template": "filepaths"
                     }
                 },
                 {
@@ -46,12 +42,10 @@
                         "name": "platform",
                         "suggestions": [
                             {
-                                "name": "android",
-                                "icon": "https://www.android.com/static/images/fav/favicon.ico"
+                                "name": "android"
                             },
                             {
-                                "name": "ios",
-                                "icon": "https://developer.apple.com/library/archive/Resources/1282/Images/apple2.png"
+                                "name": "ios"
                             }
                         ]
                     }
@@ -71,12 +65,10 @@
                         "isOptional": true,
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "✅"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "❌"
+                                "name": "false"
                             }
                         ]
                     }
@@ -89,12 +81,10 @@
                         "isOptional": true,
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "✅"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "❌"
+                                "name": "false"
                             }
                         ]
                     }
@@ -166,12 +156,10 @@
                         "name": "transform-profile",
                         "suggestions": [
                             {
-                                "name": "hermes",
-                                "icon": "https://reactnative.dev/docs/assets/HermesLogo.svg"
+                                "name": "hermes"
                             },
                             {
-                                "name": "hermes-canary",
-                                "icon": "https://reactnative.dev/docs/assets/HermesLogo.svg"
+                                "name": "hermes-canary"
                             },
                             {
                                 "name": "default"
@@ -190,7 +178,6 @@
                 {
                     "name": "--config",
                     "description": "Path to the CLI configuration file",
-                    "icon": "🛠",
                     "args": {
                         "template": "filepaths",
                         "name": "string"
@@ -225,8 +212,7 @@
                 },
                 {
                     "name": "--npm",
-                    "description": "Forces using npm for initialization",
-                    "icon": "https://img.pngio.com/publishing-to-npm-from-kentcdodds-on-eggheadio-npm-png-800_800.png"
+                    "description": "Forces using npm for initialization"
                 },
                 {
                     "name": "--directory",
@@ -245,8 +231,7 @@
                 },
                 {
                     "name": "--skip-install",
-                    "description": "Skips dependencies installation step",
-                    "icon": "⏭️"
+                    "description": "Skips dependencies installation step"
                 },
                 {
                     "name": [
@@ -369,21 +354,15 @@
                     "description": "Path to a JavaScript file that exports a log reporter as a replacement for TerminalReporter",
                     "args": {
                         "name": "logFile",
-                        "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateName": "filter-js-files"
-                        }
+                        "template": "filepaths"
                     }
                 },
                 {
                     "name": "--verbose",
-                    "icon": "🔊",
                     "description": "Enables logging"
                 },
                 {
                     "name": "--https",
-                    "icon": "🌐",
                     "description": "Enables https connections to the server"
                 },
                 {
@@ -404,7 +383,6 @@
                 },
                 {
                     "name": "--config",
-                    "icon": "🛠",
                     "description": "Path to the CLI configuration file",
                     "args": {
                         "name": "string"
@@ -432,11 +410,7 @@
                     "description": "Path to the root JS file, either absolute or relative to JS root",
                     "args": {
                         "name": "file",
-                        "template": "filepaths",
-                        "generators": {
-                            "template": "filepaths",
-                            "filterTemplateName": "filter-js-files"
-                        }
+                        "template": "filepaths"
                     }
                 },
                 {
@@ -446,12 +420,10 @@
                         "name": "platform",
                         "suggestions": [
                             {
-                                "name": "android",
-                                "icon": "https://www.android.com/static/images/fav/favicon.ico"
+                                "name": "android"
                             },
                             {
-                                "name": "ios",
-                                "icon": "https://developer.apple.com/library/archive/Resources/1282/Images/apple2.png"
+                                "name": "ios"
                             }
                         ]
                     }
@@ -471,12 +443,10 @@
                         "isOptional": true,
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "✅"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "❌"
+                                "name": "false"
                             }
                         ]
                     }
@@ -489,12 +459,10 @@
                         "isOptional": true,
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "✅"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "❌"
+                                "name": "false"
                             }
                         ]
                     }
@@ -566,12 +534,10 @@
                         "name": "transform-profile",
                         "suggestions": [
                             {
-                                "name": "hermes",
-                                "icon": "https://reactnative.dev/docs/assets/HermesLogo.svg"
+                                "name": "hermes"
                             },
                             {
-                                "name": "hermes-canary",
-                                "icon": "https://reactnative.dev/docs/assets/HermesLogo.svg"
+                                "name": "hermes-canary"
                             },
                             {
                                 "name": "default"
@@ -589,7 +555,6 @@
                 },
                 {
                     "name": "--config",
-                    "icon": "🛠",
                     "description": "Path to the CLI configuration file",
                     "args": {
                         "name": "string"
@@ -685,7 +650,6 @@
         },
         {
             "description": "Print CLI configuration",
-            "icon": "🛠",
             "name": "config",
             "options": [
                 {
@@ -854,7 +818,6 @@
                 },
                 {
                     "name": "--deviceId",
-                    "icon": "https://www.android.com/static/images/fav/favicon.ico",
                     "description": "Builds your app and starts it on a specific device/simulator with the given device id (listed by running \"adb devices\" on the command line)",
                     "args": {
                         "name": "deviceId",
@@ -882,7 +845,6 @@
                 {
                     "name": "--tasks",
                     "description": "Run custom Gradle tasks. By default it's \"installDebug\"",
-                    "icon": "https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_gradle.svg",
                     "args": {
                         "name": "task list",
                         "generatorName": "gradle_tasks_generator"
@@ -915,7 +877,6 @@
                 },
                 {
                     "name": "--configuration",
-                    "icon": "🛠",
                     "description": "Explicitly set the scheme configuration to use (default: \"Debug\")",
                     "args": {
                         "name": "config scheme",
@@ -961,7 +922,6 @@
                 },
                 {
                     "name": "--verbose",
-                    "icon": "🔊",
                     "description": "Do not use xcpretty even if installed"
                 },
                 {
@@ -995,7 +955,6 @@
         },
         {
             "name": "--verbose",
-            "icon": "🔊",
             "description": "Increase logging verbosity"
         },
         {
