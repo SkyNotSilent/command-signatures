@@ -227,63 +227,53 @@
             "name": "generate",
             "description": "Run a generator",
             "args": {
-                "generators": {
-                    "script": "_NuFrRa_n=>{let e=n.slice(-1)[0];return e.indexOf(\":\")>-1?`nx list ${e.split(\":\")[0]}`:\"nx list\"}",
-                    "trigger": ":",
-                    "cache": {
-                        "ttl": 86400
-                    },
-                    "postProcess": "_NuFrRa_(n,e)=>{if(n.indexOf(\"Installed plugins\")>-1){let i=n.split(\">\")[1].split(`\n`).filter(Boolean);return i.shift(),i.map(t=>t.trim().split(\" \")[0]).map(t=>({name:t,type:\"option\"}))}else if(n.indexOf(\"Capabilities\")>-1){let a=e.slice(-1)[0];return n.split(`\n`).filter(t=>t.trim().indexOf(\" : \")>-1).map(t=>a+t.trim().split(\" : \")[0]).map(t=>({name:t,type:\"option\"}))}}"
-                },
-                "name": "collection:generator"
+                "template": "filepaths",
+                "name": "collection:generator",
+                "generatorName": "plugin_list"
             },
             "options": [
                 {
                     "name": "--defaults",
-                    "args": [
-                        {
-                            "name": "true"
-                        },
-                        {
-                            "name": "false"
-                        }
-                    ],
+                    "args": {
+                        "isOptional": true,
+                        "suggestions": [
+                            "true",
+                            "false"
+                        ]
+                    },
                     "description": "When true, disables interactive input prompts for options with a default {true|false}"
                 },
                 {
                     "name": "--dryRun",
-                    "args": [
-                        {
-                            "name": "true"
-                        },
-                        {
-                            "name": "false"
-                        }
-                    ],
+                    "args": {
+                        "isOptional": true,
+                        "suggestions": [
+                            "true",
+                            "false"
+                        ]
+                    },
                     "description": "When true, runs the generator without making actual changes {true|false}"
                 },
                 {
                     "name": "--force",
-                    "args": [
-                        {
-                            "name": "true"
-                        },
-                        {
-                            "name": "false"
-                        }
-                    ],
+                    "args": {
+                        "isOptional": true,
+                        "suggestions": [
+                            "true",
+                            "false"
+                        ]
+                    },
                     "description": "When true, forces overwriting of existing files {true|false}"
                 },
                 {
                     "name": "--interactive",
-                    "args": [
-                        {
-                            "name": "true"
-                        },
-                        {
-                            "name": "false"
-                        }
-                    ],
+                    "args": {
+                        "isOptional": true,
+                        "suggestions": [
+                            "true",
+                            "false"
+                        ]
+                    },
                     "description": "When false, disables interactive input prompts {true|false}"
                 },
                 {

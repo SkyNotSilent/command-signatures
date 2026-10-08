@@ -4,9 +4,7 @@
     "args": {
         "name": "path",
         "isOptional": true,
-        "generators": {
-            "template": "folders"
-        }
+        "template": "folders"
     },
     "options": [
         {
@@ -31,16 +29,13 @@
                 "name": "url|slug",
                 "suggestions": [
                     {
-                        "name": "https://github.com/",
-                        "icon": "https://github.com/fluidicon.png"
+                        "name": "https://github.com/"
                     },
                     {
-                        "name": "https://gitlab.com/",
-                        "icon": "https://about.gitlab.com/ico/favicon-32x32.png"
+                        "name": "https://gitlab.com/"
                     },
                     {
-                        "name": "https://bitbucket.com/",
-                        "icon": "https://wac-cdn.atlassian.com/assets/img/favicons/bitbucket/favicon-32x32.png"
+                        "name": "https://bitbucket.com/"
                     }
                 ]
             },
@@ -63,9 +58,7 @@
             "args": {
                 "name": "path",
                 "isOptional": true,
-                "generators": {
-                    "template": "folders"
-                }
+                "template": "folders"
             }
         },
         {

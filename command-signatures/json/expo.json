@@ -1,6 +1,5 @@
 {
     "name": "expo",
-    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/expo.png",
     "description": "Tools for creating, running, and deploying Universal Expo and React Native apps",
     "options": [
         {
@@ -9,8 +8,7 @@
                 "--help"
             ],
             "priority": 1,
-            "description": "Output usage information",
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+            "description": "Output usage information"
         },
         {
             "name": [
@@ -18,7 +16,6 @@
                 "--version"
             ],
             "description": "Output the version number",
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/info.png",
             "priority": 1
         }
     ],
@@ -38,8 +35,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -50,8 +46,7 @@
                     "args": {
                         "name": "string",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": [
@@ -62,8 +57,7 @@
                     "args": {
                         "name": "string",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--otp",
@@ -71,11 +65,9 @@
                     "args": {
                         "name": "string",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/login.png"
+            ]
         },
         {
             "name": "logout",
@@ -89,11 +81,9 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/logout.png"
+            ]
         },
         {
             "name": "register",
@@ -107,11 +97,9 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/register.png"
+            ]
         },
         {
             "name": [
@@ -128,11 +116,9 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/info.png"
+            ]
         },
         {
             "name": [
@@ -154,8 +140,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -167,16 +152,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": "--clear-dist-cert",
@@ -185,16 +167,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": "--clear-push-key",
@@ -203,16 +182,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": "--clear-push-cert",
@@ -221,16 +197,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": "--clear-provisioning-profile",
@@ -239,16 +212,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": [
@@ -260,24 +230,20 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": "--apple-id",
                     "description": "Apple ID username (please also set the Apple ID password as EXPO_APPLE_PASSWORD environment variable)",
                     "args": {
                         "name": "login"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                    }
                 },
                 {
                     "name": [
@@ -292,20 +258,17 @@
                                 "name": "archive"
                             },
                             {
-                                "name": "simulator",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                                "name": "simulator"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--release-channel",
                     "description": "Pull from specified release channel",
                     "args": {
                         "name": "name"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--no-publish",
@@ -314,16 +277,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--no-wait",
@@ -332,16 +292,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--team-id",
@@ -350,16 +307,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--dist-p12-path",
@@ -367,8 +321,7 @@
                     "args": {
                         "name": "path",
                         "template": "filepaths"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/path.png"
+                    }
                 },
                 {
                     "name": "--push-id",
@@ -377,16 +330,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--push-p8-path",
@@ -394,8 +344,7 @@
                     "args": {
                         "name": "path",
                         "template": "filepaths"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/path.png"
+                    }
                 },
                 {
                     "name": "--provisioning-profile-path",
@@ -403,16 +352,14 @@
                     "args": {
                         "name": "path",
                         "template": "filepaths"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/path.png"
+                    }
                 },
                 {
                     "name": "--public-url",
                     "description": "The URL of an externally hosted manifest (for self-hosted apps)",
                     "args": {
                         "name": "url"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--skip-credentials-check",
@@ -421,16 +368,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--skip-workflow-check",
@@ -439,16 +383,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -458,11 +399,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+            ]
         },
         {
             "name": [
@@ -484,8 +423,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -497,24 +435,20 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": "--release-channel",
                     "description": "Pull from specified release channel",
                     "args": {
                         "name": "name"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--no-publish",
@@ -523,16 +457,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--no-wait",
@@ -541,16 +472,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--keystore-path",
@@ -558,16 +486,14 @@
                     "args": {
                         "name": "path",
                         "template": "filepaths"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/key.png"
+                    }
                 },
                 {
                     "name": "--keystore-alias",
                     "description": "Keystore Alias",
                     "args": {
                         "name": "alias"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/key.png"
+                    }
                 },
                 {
                     "name": "--generate-keystore",
@@ -576,24 +502,20 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/key.png"
+                    }
                 },
                 {
                     "name": "--public-url",
                     "description": "The URL of an externally hosted manifest (for self-hosted apps)",
                     "args": {
                         "name": "url"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--skip-workflow-check",
@@ -602,16 +524,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": [
@@ -623,16 +542,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -642,11 +558,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+            ]
         },
         {
             "name": "build:web",
@@ -665,8 +579,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -678,16 +591,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": "--no-pwa",
@@ -696,16 +606,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": [
@@ -717,16 +624,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/dev.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -736,11 +640,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/webpack.png"
+            ]
         },
         {
             "name": [
@@ -762,16 +664,14 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--public-url",
                     "description": "The URL of an externally hosted manifest (for self-hosted apps)",
                     "args": {
                         "name": "url"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -781,11 +681,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/info.png"
+            ]
         },
         {
             "name": "client:ios",
@@ -804,16 +702,14 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--apple-id",
                     "description": "Apple ID username (please also set the Apple ID password as EXPO_APPLE_PASSWORD environment variable)",
                     "args": {
                         "name": "login"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -823,11 +719,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/download.png"
+            ]
         },
         {
             "name": "client:install:ios",
@@ -841,8 +735,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--latest",
@@ -851,19 +744,15 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/latest.png"
+                    }
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+            ]
         },
         {
             "name": "client:install:android",
@@ -877,8 +766,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -889,8 +777,7 @@
                     "args": {
                         "name": "device",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                    }
                 },
                 {
                     "name": "--latest",
@@ -899,19 +786,15 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/latest.png"
+                    }
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+            ]
         },
         {
             "name": "credentials:manager",
@@ -930,8 +813,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -943,16 +825,13 @@
                         "name": "platform",
                         "suggestions": [
                             {
-                                "name": "android",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                                "name": "android"
                             },
                             {
-                                "name": "ios",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                                "name": "ios"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -962,11 +841,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/list.png"
+            ]
         },
         {
             "name": "customize:web",
@@ -985,8 +862,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -998,16 +874,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/force.png"
+                    }
                 },
                 {
                     "name": "--offline",
@@ -1016,16 +889,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/offline.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -1035,11 +905,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/customize.png"
+            ]
         },
         {
             "name": "eject",
@@ -1058,8 +926,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--no-install",
@@ -1068,16 +935,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--npm",
@@ -1086,16 +950,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "fig://icon?type=npm"
+                    }
                 },
                 {
                     "name": [
@@ -1110,16 +971,13 @@
                                 "name": "all"
                             },
                             {
-                                "name": "android",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                                "name": "android"
                             },
                             {
-                                "name": "ios",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                                "name": "ios"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -1129,11 +987,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/eject.png"
+            ]
         },
         {
             "name": "prebuild",
@@ -1152,8 +1008,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--no-install",
@@ -1162,16 +1017,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--clean",
@@ -1180,16 +1032,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": "--npm",
@@ -1198,24 +1047,20 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "fig://icon?type=npm"
+                    }
                 },
                 {
                     "name": "--template",
                     "description": "Project template to clone from. File path pointing to a local tar file or a github repo",
                     "args": {
                         "name": "template"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/export.png"
+                    }
                 },
                 {
                     "name": [
@@ -1230,24 +1075,20 @@
                                 "name": "all"
                             },
                             {
-                                "name": "android",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                                "name": "android"
                             },
                             {
-                                "name": "ios",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                                "name": "ios"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                    }
                 },
                 {
                     "name": "--skip-dependency-update",
                     "description": "Preserves versions of listed packages in package.json (comma separated list)",
                     "args": {
                         "name": "dependencies"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -1257,11 +1098,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/prebuild.png"
+            ]
         },
         {
             "name": "bundle-assets",
@@ -1280,8 +1119,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--dest",
@@ -1289,8 +1127,7 @@
                     "args": {
                         "name": "dest",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--platform",
@@ -1299,16 +1136,13 @@
                         "name": "platform",
                         "suggestions": [
                             {
-                                "name": "android",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                                "name": "android"
                             },
                             {
-                                "name": "ios",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                                "name": "ios"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -1318,7 +1152,6 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
             ]
@@ -1340,8 +1173,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--platform",
@@ -1350,16 +1182,13 @@
                         "name": "platform",
                         "suggestions": [
                             {
-                                "name": "android",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                                "name": "android"
                             },
                             {
-                                "name": "ios",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                                "name": "ios"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                    }
                 },
                 {
                     "name": "--skipXcodeConfig",
@@ -1367,8 +1196,7 @@
                     "args": {
                         "name": "bool",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -1378,7 +1206,6 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
             ]
@@ -1400,8 +1227,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--platform",
@@ -1413,16 +1239,13 @@
                                 "name": "all"
                             },
                             {
-                                "name": "android",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                                "name": "android"
                             },
                             {
-                                "name": "ios",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                                "name": "ios"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                    }
                 },
                 {
                     "name": [
@@ -1432,8 +1255,7 @@
                     "description": "The public url that will host the static files (required)",
                     "args": {
                         "name": "url"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": [
@@ -1445,16 +1267,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": "--output-dir",
@@ -1462,8 +1281,7 @@
                     "args": {
                         "name": "dir",
                         "template": "folders"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/path.png"
+                    }
                 },
                 {
                     "name": [
@@ -1473,8 +1291,7 @@
                     "description": "The absolute or relative url that will host the asset files",
                     "args": {
                         "name": "url"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": [
@@ -1486,16 +1303,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/export.png"
+                    }
                 },
                 {
                     "name": "--dev",
@@ -1504,16 +1318,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/dev.png"
+                    }
                 },
                 {
                     "name": [
@@ -1525,16 +1336,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/export.png"
+                    }
                 },
                 {
                     "name": [
@@ -1546,16 +1354,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/quiet.png"
+                    }
                 },
                 {
                     "name": [
@@ -1574,7 +1379,6 @@
                             }
                         ]
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 },
                 {
@@ -1583,28 +1387,22 @@
                     "args": {
                         "name": "dir",
                         "template": "folders"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/path.png"
+                    }
                 },
                 {
                     "name": "--merge-src-url",
                     "description": "A repeatable source tar.gz file URL to merge in",
                     "args": {
                         "name": "url"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--max-workers",
                     "description": "Maximum number of tasks to allow Metro to spawn",
                     "args": {
-                        "generators": {
-                            "script": "sysctl -n hw.ncpu",
-                            "postProcess": "_NuFrRa_t=>{let e=Number(t);return Array.from({length:e},(o,n)=>{let i=e-n;return{priority:i,name:String(i)}})}"
-                        },
+                        "generatorName": "sysctl_hw_ncpu",
                         "name": "Number of workers"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/number.png"
+                    }
                 },
                 {
                     "name": "--experimental-bundle",
@@ -1613,16 +1411,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -1632,11 +1427,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/export.png"
+            ]
         },
         {
             "name": "fetch:ios:certs",
@@ -1655,8 +1448,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--config",
@@ -1666,11 +1458,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+            ]
         },
         {
             "name": "fetch:android:keystore",
@@ -1689,8 +1479,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--config",
@@ -1700,11 +1489,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+            ]
         },
         {
             "name": "fetch:android:hashes",
@@ -1723,8 +1510,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--config",
@@ -1734,11 +1520,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+            ]
         },
         {
             "name": "fetch:android:upload-cert",
@@ -1757,8 +1541,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--config",
@@ -1768,11 +1551,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+            ]
         },
         {
             "name": "config",
@@ -1791,8 +1572,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -1813,8 +1593,7 @@
                                 "name": "introspect"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--full",
@@ -1823,16 +1602,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -1842,11 +1618,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/config.png"
+            ]
         },
         {
             "name": "diagnostics",
@@ -1865,8 +1639,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--config",
@@ -1876,11 +1649,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/diagnostics.png"
+            ]
         },
         {
             "name": "doctor",
@@ -1899,8 +1670,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--config",
@@ -1910,11 +1680,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/doctor.png"
+            ]
         },
         {
             "name": [
@@ -1935,8 +1703,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--npm",
@@ -1945,16 +1712,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "fig://icon?type=npm"
+                    }
                 },
                 {
                     "name": "--yarn",
@@ -1963,19 +1727,15 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "fig://icon?type=yarn"
+                    }
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/upgrade.png"
+            ]
         },
         {
             "name": [
@@ -1996,8 +1756,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -2008,8 +1767,7 @@
                     "args": {
                         "name": "name",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/export.png"
+                    }
                 },
                 {
                     "name": "--npm",
@@ -2018,16 +1776,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "fig://icon?type=npm"
+                    }
                 },
                 {
                     "name": "--yarn",
@@ -2036,16 +1791,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "fig://icon?type=yarn"
+                    }
                 },
                 {
                     "name": "--no-install",
@@ -2054,16 +1806,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--name",
@@ -2071,8 +1820,7 @@
                     "args": {
                         "name": "name",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--yes",
@@ -2081,19 +1829,15 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                    }
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/init.png"
+            ]
         },
         {
             "name": [
@@ -2104,14 +1848,12 @@
             "description": "Install a module or other package to a project",
             "priority": 64,
             "args": {
-                "generators": {
-                    "script": "_NuFrRa_script(t){return t[t.length-1]===\"\"?\"\":`curl -s -H \"Accept: application/json\" \"https://api.npms.io/v2/search?q=${t[t.length-1]}&size=20\"`}",
-                    "postProcess": "_NuFrRa_postProcess(t){try{return JSON.parse(t).results.map(o=>({name:o.package.name,description:o.package.description}))}catch(e){return[]}}"
-                },
+                "template": "filepaths",
                 "isOptional": true,
                 "isVariadic": true,
                 "name": "packages",
-                "debounce": true
+                "debounce": true,
+                "generatorName": "npms_search"
             },
             "options": [
                 {
@@ -2120,8 +1862,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--npm",
@@ -2130,16 +1871,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "fig://icon?type=npm"
+                    }
                 },
                 {
                     "name": "--yarn",
@@ -2148,19 +1886,15 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "fig://icon?type=yarn"
+                    }
                 }
-            ],
-            "icon": "fig://icon?type=npm"
+            ]
         },
         {
             "name": [
@@ -2182,8 +1916,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -2195,16 +1928,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/quiet.png"
+                    }
                 },
                 {
                     "name": [
@@ -2215,8 +1945,7 @@
                     "args": {
                         "name": "dest",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/send.png"
+                    }
                 },
                 {
                     "name": [
@@ -2228,16 +1957,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": [
@@ -2256,28 +1982,22 @@
                             }
                         ]
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 },
                 {
                     "name": "--max-workers",
                     "description": "Maximum number of tasks to allow Metro to spawn",
                     "args": {
-                        "generators": {
-                            "script": "sysctl -n hw.ncpu",
-                            "postProcess": "_NuFrRa_t=>{let e=Number(t);return Array.from({length:e},(o,n)=>{let i=e-n;return{priority:i,name:String(i)}})}"
-                        },
+                        "generatorName": "sysctl_hw_ncpu",
                         "name": "Number of workers"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/number.png"
+                    }
                 },
                 {
                     "name": "--release-channel",
                     "description": "The release channel to publish to. Default is 'default'",
                     "args": {
                         "name": "name"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -2287,11 +2007,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/publish.png"
+            ]
         },
         {
             "name": [
@@ -2313,8 +2031,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -2324,8 +2041,7 @@
                     "description": "The channel to set the published release. (Required)",
                     "args": {
                         "name": "name"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": [
@@ -2337,16 +2053,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -2356,11 +2069,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/publish.png"
+            ]
         },
         {
             "name": [
@@ -2382,8 +2093,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--channel-id",
@@ -2392,16 +2102,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": [
@@ -2411,8 +2118,7 @@
                     "description": "The channel to rollback from. (Required)",
                     "args": {
                         "name": "name"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": [
@@ -2422,8 +2128,7 @@
                     "description": "The sdk version to rollback. (Required)",
                     "args": {
                         "name": "version"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/expo.png"
+                    }
                 },
                 {
                     "name": [
@@ -2435,16 +2140,13 @@
                         "name": "platform",
                         "suggestions": [
                             {
-                                "name": "android",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                                "name": "android"
                             },
                             {
-                                "name": "ios",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                                "name": "ios"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -2454,11 +2156,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/publish-rollback.png"
+            ]
         },
         {
             "name": [
@@ -2480,8 +2180,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -2491,8 +2190,7 @@
                     "description": "Filter by release channel. If this flag is not included, the most recent publications will be shown",
                     "args": {
                         "name": "name"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--count",
@@ -2501,16 +2199,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/number.png"
+                    }
                 },
                 {
                     "name": [
@@ -2522,16 +2217,13 @@
                         "name": "platform",
                         "suggestions": [
                             {
-                                "name": "android",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                                "name": "android"
                             },
                             {
-                                "name": "ios",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                                "name": "ios"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                    }
                 },
                 {
                     "name": [
@@ -2541,8 +2233,7 @@
                     "description": "Filter by SDK version e.g. 35.0.0",
                     "args": {
                         "name": "version"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/expo.png"
+                    }
                 },
                 {
                     "name": [
@@ -2554,16 +2245,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -2573,11 +2261,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/publish.png"
+            ]
         },
         {
             "name": [
@@ -2599,8 +2285,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--publish-id",
@@ -2609,16 +2294,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": [
@@ -2630,16 +2312,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -2649,11 +2328,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/publish.png"
+            ]
         },
         {
             "name": "push:android:upload",
@@ -2672,8 +2349,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--api-key",
@@ -2682,16 +2358,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/key.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -2701,11 +2374,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/push.png"
+            ]
         },
         {
             "name": "push:android:show",
@@ -2724,8 +2395,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--config",
@@ -2735,11 +2405,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/push.png"
+            ]
         },
         {
             "name": "push:android:clear",
@@ -2758,8 +2426,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--config",
@@ -2769,11 +2436,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/push-clear.png"
+            ]
         },
         {
             "name": "run:android",
@@ -2792,8 +2457,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--no-bundler",
@@ -2802,16 +2466,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/metro.png"
+                    }
                 },
                 {
                     "name": [
@@ -2822,8 +2483,7 @@
                     "args": {
                         "name": "device",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                    }
                 },
                 {
                     "name": [
@@ -2833,8 +2493,7 @@
                     "description": "Port to start the Metro bundler on. Default: 8081",
                     "args": {
                         "name": "port"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/number.png"
+                    }
                 },
                 {
                     "name": "--variant",
@@ -2842,8 +2501,7 @@
                     "args": {
                         "name": "name",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -2853,11 +2511,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+            ]
         },
         {
             "name": "run:ios",
@@ -2876,8 +2532,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--no-build-cache",
@@ -2886,16 +2541,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--no-install",
@@ -2904,16 +2556,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--no-bundler",
@@ -2922,16 +2571,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/metro.png"
+                    }
                 },
                 {
                     "name": [
@@ -2940,13 +2586,9 @@
                     ],
                     "description": "Device name or UDID to build the app on",
                     "args": {
-                        "generators": {
-                            "script": "xcrun xctrace list devices",
-                            "postProcess": "_NuFrRa_t=>t.split(`\n`).filter(e=>!e.match(/^=/)).filter(Boolean).map(e=>e.split(/(.*?) (\\(([0-9.]+)\\) )?\\(([0-9A-F-]+)\\)/i)).filter(e=>!!(e!=null&&e[3])).map(([,e,,o,n])=>({displayName:`${e.trim()} (${o})`,name:n}))"
-                        },
+                        "generatorName": "xcrun_xctrace_list_devices",
                         "name": "device"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/devices.png"
+                    }
                 },
                 {
                     "name": [
@@ -2956,33 +2598,24 @@
                     "description": "Port to start the Metro bundler on. Default: 8081",
                     "args": {
                         "name": "port"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/number.png"
+                    }
                 },
                 {
                     "name": "--scheme",
                     "description": "Scheme to build",
                     "args": {
-                        "generators": {
-                            "script": "xcodebuild -project ios/*.xcodeproj -list -json",
-                            "postProcess": "_NuFrRa_t=>JSON.parse(t).project.schemes.map(e=>({name:e}))"
-                        },
+                        "generatorName": "xcodebuild_ios_xcodeproj",
                         "name": "scheme",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--configuration",
                     "description": "Xcode configuration to use. Debug or Release. Default: Debug",
                     "args": {
-                        "generators": {
-                            "script": "xcodebuild -project ios/*.xcodeproj -list -json",
-                            "postProcess": "_NuFrRa_t=>JSON.parse(t).project.configurations.map(e=>({name:e}))"
-                        },
+                        "generatorName": "xcodebuild_ios_xcodeproj",
                         "name": "configuration"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -2992,11 +2625,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+            ]
         },
         {
             "name": "send",
@@ -3015,8 +2646,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -3027,8 +2657,7 @@
                     "args": {
                         "name": "dest",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/send.png"
+                    }
                 },
                 {
                     "name": "--dev-client",
@@ -3037,24 +2666,20 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/dev.png"
+                    }
                 },
                 {
                     "name": "--scheme",
                     "description": "Custom URI protocol to use with a development build",
                     "args": {
                         "name": "scheme"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/scheme.png"
+                    }
                 },
                 {
                     "name": [
@@ -3066,16 +2691,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                    }
                 },
                 {
                     "name": [
@@ -3087,16 +2709,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                    }
                 },
                 {
                     "name": [
@@ -3108,16 +2727,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/web.png"
+                    }
                 },
                 {
                     "name": [
@@ -3128,8 +2744,7 @@
                     "args": {
                         "name": "mode",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lan.png"
+                    }
                 },
                 {
                     "name": "--tunnel",
@@ -3138,16 +2753,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/tunnel.png"
+                    }
                 },
                 {
                     "name": "--lan",
@@ -3156,16 +2768,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lan.png"
+                    }
                 },
                 {
                     "name": "--localhost",
@@ -3174,16 +2783,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/localhost.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -3193,11 +2799,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/send.png"
+            ]
         },
         {
             "name": [
@@ -3219,8 +2823,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": [
@@ -3231,8 +2834,7 @@
                     "args": {
                         "name": "dest",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/send.png"
+                    }
                 },
                 {
                     "name": [
@@ -3244,28 +2846,21 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/clear.png"
+                    }
                 },
                 {
                     "name": "--max-workers",
                     "description": "Maximum number of tasks to allow Metro to spawn",
                     "args": {
-                        "generators": {
-                            "script": "sysctl -n hw.ncpu",
-                            "postProcess": "_NuFrRa_t=>{let e=Number(t);return Array.from({length:e},(o,n)=>{let i=e-n;return{priority:i,name:String(i)}})}"
-                        },
+                        "generatorName": "sysctl_hw_ncpu",
                         "name": "Number of workers"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/number.png"
+                    }
                 },
                 {
                     "name": "--dev",
@@ -3274,16 +2869,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/dev.png"
+                    }
                 },
                 {
                     "name": "--no-dev",
@@ -3292,16 +2884,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--minify",
@@ -3310,16 +2899,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/minify.png"
+                    }
                 },
                 {
                     "name": "--no-minify",
@@ -3328,16 +2914,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--https",
@@ -3346,16 +2929,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lock.png"
+                    }
                 },
                 {
                     "name": "--force-manifest-type",
@@ -3364,16 +2944,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": [
@@ -3383,8 +2960,7 @@
                     "description": "Port to start the native Metro bundler on (does not apply to web or tunnel). Default: 19000",
                     "args": {
                         "name": "port"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/number.png"
+                    }
                 },
                 {
                     "name": "--no-https",
@@ -3393,16 +2969,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--dev-client",
@@ -3411,24 +2984,20 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/dev.png"
+                    }
                 },
                 {
                     "name": "--scheme",
                     "description": "Custom URI protocol to use with a development build",
                     "args": {
                         "name": "scheme"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/scheme.png"
+                    }
                 },
                 {
                     "name": [
@@ -3440,16 +3009,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                    }
                 },
                 {
                     "name": [
@@ -3461,16 +3027,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                    }
                 },
                 {
                     "name": [
@@ -3482,16 +3045,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/web.png"
+                    }
                 },
                 {
                     "name": [
@@ -3502,8 +3062,7 @@
                     "args": {
                         "name": "mode",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lan.png"
+                    }
                 },
                 {
                     "name": "--tunnel",
@@ -3512,16 +3071,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/tunnel.png"
+                    }
                 },
                 {
                     "name": "--lan",
@@ -3530,16 +3086,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lan.png"
+                    }
                 },
                 {
                     "name": "--localhost",
@@ -3548,16 +3101,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/localhost.png"
+                    }
                 },
                 {
                     "name": "--offline",
@@ -3566,16 +3116,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/offline.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -3585,11 +3132,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/play.png"
+            ]
         },
         {
             "name": [
@@ -3611,8 +3156,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--dev",
@@ -3621,16 +3165,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/dev.png"
+                    }
                 },
                 {
                     "name": "--no-dev",
@@ -3639,16 +3180,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--minify",
@@ -3657,16 +3195,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/minify.png"
+                    }
                 },
                 {
                     "name": "--no-minify",
@@ -3675,16 +3210,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--https",
@@ -3693,16 +3225,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lock.png"
+                    }
                 },
                 {
                     "name": "--no-https",
@@ -3711,16 +3240,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/skip.png"
+                    }
                 },
                 {
                     "name": "--force-manifest-type",
@@ -3729,16 +3255,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": [
@@ -3748,8 +3271,7 @@
                     "description": "Port to start the Webpack bundler on. Default: 19006",
                     "args": {
                         "name": "port"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/number.png"
+                    }
                 },
                 {
                     "name": [
@@ -3760,8 +3282,7 @@
                     "args": {
                         "name": "dest",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/send.png"
+                    }
                 },
                 {
                     "name": "--dev-client",
@@ -3770,24 +3291,20 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/dev.png"
+                    }
                 },
                 {
                     "name": "--scheme",
                     "description": "Custom URI protocol to use with a development build",
                     "args": {
                         "name": "scheme"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/scheme.png"
+                    }
                 },
                 {
                     "name": [
@@ -3799,16 +3316,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                    }
                 },
                 {
                     "name": [
@@ -3820,16 +3334,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                    }
                 },
                 {
                     "name": [
@@ -3841,16 +3352,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/web.png"
+                    }
                 },
                 {
                     "name": [
@@ -3861,8 +3369,7 @@
                     "args": {
                         "name": "mode",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lan.png"
+                    }
                 },
                 {
                     "name": "--tunnel",
@@ -3871,16 +3378,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/tunnel.png"
+                    }
                 },
                 {
                     "name": "--lan",
@@ -3889,16 +3393,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lan.png"
+                    }
                 },
                 {
                     "name": "--localhost",
@@ -3907,16 +3408,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/localhost.png"
+                    }
                 },
                 {
                     "name": "--offline",
@@ -3925,16 +3423,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/offline.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -3944,11 +3439,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/web.png"
+            ]
         },
         {
             "name": [
@@ -3970,8 +3463,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--verbose",
@@ -3980,16 +3472,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/verbose.png"
+                    }
                 },
                 {
                     "name": "--latest",
@@ -3998,24 +3487,20 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/latest.png"
+                    }
                 },
                 {
                     "name": "--id",
                     "description": "Migrate to eas submit --id <id>",
                     "args": {
                         "name": "id"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--path",
@@ -4024,16 +3509,14 @@
                         "name": "path",
                         "isOptional": true,
                         "template": "filepaths"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/path.png"
+                    }
                 },
                 {
                     "name": "--url",
                     "description": "Migrate to eas submit --url <url>",
                     "args": {
                         "name": "url"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--android-package",
@@ -4042,16 +3525,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                    }
                 },
                 {
                     "name": "--type",
@@ -4060,32 +3540,27 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--key",
                     "description": "Migrate to eas.json's serviceAccountKeyPath property",
                     "args": {
                         "name": "key"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/key.png"
+                    }
                 },
                 {
                     "name": "--track",
                     "description": "Migrate to eas.json's track property",
                     "args": {
                         "name": "track"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--release-status",
@@ -4094,16 +3569,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -4113,11 +3585,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/play-store.png"
+            ]
         },
         {
             "name": [
@@ -4139,8 +3609,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--verbose",
@@ -4149,16 +3618,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/verbose.png"
+                    }
                 },
                 {
                     "name": "--latest",
@@ -4167,24 +3633,20 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/latest.png"
+                    }
                 },
                 {
                     "name": "--id",
                     "description": "Migrate to eas submit --id <id>",
                     "args": {
                         "name": "id"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--path",
@@ -4193,16 +3655,14 @@
                         "name": "path",
                         "isOptional": true,
                         "template": "filepaths"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/path.png"
+                    }
                 },
                 {
                     "name": "--url",
                     "description": "Migrate to eas submit --url <url>",
                     "args": {
                         "name": "url"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--apple-id",
@@ -4211,16 +3671,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                    }
                 },
                 {
                     "name": "--itc-team-id",
@@ -4229,16 +3686,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--app-name",
@@ -4247,16 +3701,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--company-name",
@@ -4265,32 +3716,27 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--sku",
                     "description": "Migrate to eas.json's sku property",
                     "args": {
                         "name": "sku"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--language",
                     "description": "Migrate to eas.json's language property",
                     "args": {
                         "name": "language"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -4300,11 +3746,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/app-store.png"
+            ]
         },
         {
             "name": [
@@ -4326,8 +3770,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--dev-client",
@@ -4336,24 +3779,20 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/dev.png"
+                    }
                 },
                 {
                     "name": "--scheme",
                     "description": "Custom URI protocol to use with a development build",
                     "args": {
                         "name": "scheme"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/scheme.png"
+                    }
                 },
                 {
                     "name": [
@@ -4365,16 +3804,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/android.png"
+                    }
                 },
                 {
                     "name": [
@@ -4386,16 +3822,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/apple.png"
+                    }
                 },
                 {
                     "name": [
@@ -4407,16 +3840,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/web.png"
+                    }
                 },
                 {
                     "name": [
@@ -4427,8 +3857,7 @@
                     "args": {
                         "name": "mode",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lan.png"
+                    }
                 },
                 {
                     "name": "--tunnel",
@@ -4437,16 +3866,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/tunnel.png"
+                    }
                 },
                 {
                     "name": "--lan",
@@ -4455,16 +3881,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lan.png"
+                    }
                 },
                 {
                     "name": "--localhost",
@@ -4473,16 +3896,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/localhost.png"
+                    }
                 },
                 {
                     "name": "--offline",
@@ -4491,16 +3911,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/offline.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -4510,11 +3927,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/url.png"
+            ]
         },
         {
             "name": "url:ipa",
@@ -4533,16 +3948,14 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--public-url",
                     "description": "The URL of an externally hosted manifest (for self-hosted apps)",
                     "args": {
                         "name": "url"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -4552,11 +3965,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/app-store.png"
+            ]
         },
         {
             "name": "url:apk",
@@ -4575,16 +3986,14 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--public-url",
                     "description": "The URL of an externally hosted manifest (for self-hosted apps)",
                     "args": {
                         "name": "url"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -4594,11 +4003,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/play-store.png"
+            ]
         },
         {
             "name": "webhooks",
@@ -4617,8 +4024,7 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--config",
@@ -4628,11 +4034,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/webhook.png"
+            ]
         },
         {
             "name": "webhooks:add",
@@ -4651,16 +4055,14 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--url",
                     "description": "URL to request. (Required)",
                     "args": {
                         "name": "url"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--event",
@@ -4669,24 +4071,20 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--secret",
                     "description": "Secret used to create a hash signature of the request payload, provided in the 'Expo-Signature' header",
                     "args": {
                         "name": "secret"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lock.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -4696,11 +4094,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/webhook-add.png"
+            ]
         },
         {
             "name": "webhooks:remove",
@@ -4719,16 +4115,14 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--id",
                     "description": "ID of the webhook to remove",
                     "args": {
                         "name": "id"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -4738,11 +4132,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/webhook-remove.png"
+            ]
         },
         {
             "name": "webhooks:update",
@@ -4761,16 +4153,14 @@
                         "--help"
                     ],
                     "priority": 1,
-                    "description": "Output usage information",
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/help.png"
+                    "description": "Output usage information"
                 },
                 {
                     "name": "--id",
                     "description": "ID of the webhook to update",
                     "args": {
                         "name": "id"
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--url",
@@ -4778,8 +4168,7 @@
                     "args": {
                         "name": "url",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--event",
@@ -4788,16 +4177,13 @@
                         "name": "boolean",
                         "suggestions": [
                             {
-                                "name": "true",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/true.png"
+                                "name": "true"
                             },
                             {
-                                "name": "false",
-                                "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/false.png"
+                                "name": "false"
                             }
                         ]
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/string.png"
+                    }
                 },
                 {
                     "name": "--secret",
@@ -4805,8 +4191,7 @@
                     "args": {
                         "name": "secret",
                         "isOptional": true
-                    },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/lock.png"
+                    }
                 },
                 {
                     "name": "--config",
@@ -4816,11 +4201,9 @@
                         "isOptional": true,
                         "template": "filepaths"
                     },
-                    "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/block.png",
                     "priority": 2
                 }
-            ],
-            "icon": "https://raw.githubusercontent.com/expo/expo-cli/master/assets/fig/webhook-update.png"
+            ]
         }
     ]
 }
